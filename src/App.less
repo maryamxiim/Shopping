@@ -3,14 +3,23 @@
 body {
   direction: rtl;
 
-  .search {
-    direction: rtl;
+  .headers {
+    // direction: rtl;
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
     align-items: center;
+    border-bottom: 1px solid #e7e5e5;
+    // width: 90%;
+    padding-bottom: 20px;
   }
 
+  .ant-menu {
+    border-bottom: 0px;
+  }
+  .search {
+    direction: ltr;
+  }
   // .App {
   //   width: 1200px;
   //   margin: auto;
@@ -20,7 +29,7 @@ body {
     direction: rtl;
   }
 
-  .picture {
+  .logo {
     display: flex;
     align-items: center;
     //   margin-right: 20px;
@@ -28,7 +37,7 @@ body {
 
   .layout {
     display: flex;
-    margin-top: 30px;
+    // margin-top: 30px;
   }
   .menu {
     direction: rtl;
@@ -39,6 +48,10 @@ body {
     //   background-color: rgb(152, 180, 180);
   }
 
+  .menus {
+    margin: 0px 10px;
+  }
+
   .ax {
     display: flex;
     justify-content: space-around;
@@ -46,12 +59,18 @@ body {
 
   .product {
     text-align: center;
+    // margin: 0px 100px;
+  }
+
+  .product h4 {
+    color: #17a2b8;
   }
 
   .axs {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    // margin-top: 50px;
+    margin: 50px auto;
   }
 
   .line {

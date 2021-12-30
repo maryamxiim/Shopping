@@ -1,13 +1,14 @@
 import 'antd/dist/antd.css';
-import './App.less';
 import React from 'react';
 import {
   Row, Col, Input, Button,
   Layout, Menu,
   Card,
 } from 'antd';
-import { UserOutlined, ShopOutlined, ShoppingOutlined } from '@ant-design/icons';
-import picture from './assets/Group2.png';
+import {
+  UserOutlined, ShopOutlined, ShoppingOutlined, DownOutlined,
+} from '@ant-design/icons';
+import logo from './assets/Group2.png';
 import picture2 from './assets/Rectangle19.png';
 import picture3 from './assets/Rectangle20.png';
 import icon24 from './assets/icon24.png';
@@ -17,54 +18,52 @@ import iconoff from './assets/iconoff.png';
 import Rectangle27 from './assets/Rectangle27.png';
 import card from './assets/Group26.png';
 import imgfooter from './assets/Group2-2.png';
-
-const { Meta } = Card;
-// import '~antd/dist/antd.css';
+import './App.less';
 
 const { Search } = Input;
 const onSearch = (value) => console.log(value);
 const { Header } = Layout;
-const gridStyle = {
-  heigh: '25%',
-  textAlign: 'center',
-};
 
 function App() {
   return (
     <div className="App">
-      <Row className="search">
-        <Col span={2} className="picture">
-          <img src={picture} alt="" />
-          <div>نام فروشگاه</div>
+      <Row className="headers">
+        <Col span={3} className="logo">
+          <img src={logo} alt="" />
+          <h3>نام فروشگاه</h3>
         </Col>
-        <Col span={6}><Search placeholder="جستجو در میان محصولات" onSearch={onSearch} style={{ width: 200 }} /></Col>
-        <Col span={8} className="mim">
+        <Col span={6}><Search placeholder="جستجو در میان محصولات" onSearch={onSearch} style={{ width: 400, direction: 'ltr', textAlign: 'right' }} /></Col>
+        <Col span={9} className="mim">
 
           <Button
             type="primary"
             icon={<ShopOutlined />}
           >
+          &nbsp;
             ثبت نام فروشندگان
           </Button>
           <Button type="primary" icon={<ShoppingOutlined />}>
+          &nbsp;
             سبد خرید
           </Button>
           <Button type="primary" icon={<UserOutlined />}>
+            &nbsp;
             حساب کاربری
           </Button>
-
         </Col>
       </Row>
       <Layout className="layout">
         <Header>
           <Menu className="menu" mode="horizontal" defaultSelectedKeys={['2']}>
-            <Menu.Item key="1">کالای دیجیتال</Menu.Item>
-            <Menu.Item key="2">خانه و آشپزخانه</Menu.Item>
-            <Menu.Item key="3">لوازم التحریر، کتاب و هنر</Menu.Item>
-            <Menu.Item key="4">آرایشی و سلامت</Menu.Item>
-            <Menu.Item key="5">اسباب بازی</Menu.Item>
-            <Menu.Item key="6">ورزش و سفر</Menu.Item>
-            <Menu.Item key="7">زیور آلات و پوشاک</Menu.Item>
+            <Menu.Item key="1" className="menus">
+              کالای دیجیتال
+            </Menu.Item>
+            <Menu.Item key="2" className="menus">خانه و آشپزخانه</Menu.Item>
+            <Menu.Item key="3" className="menus">لوازم التحریر، کتاب و هنر</Menu.Item>
+            <Menu.Item key="4" className="menus">آرایشی و سلامت</Menu.Item>
+            <Menu.Item key="5" className="menus">اسباب بازی</Menu.Item>
+            <Menu.Item key="6" className="menus">ورزش و سفر</Menu.Item>
+            <Menu.Item key="7" className="menus">زیور آلات و پوشاک</Menu.Item>
           </Menu>
         </Header>
       </Layout>
@@ -73,34 +72,34 @@ function App() {
         <Col span={5}><img src={picture3} alt="" style={{ width: '100%' }} /></Col>
       </Row>
       <Row className="axs">
-        <Col span={4}>
+        <Col span={3}>
           <div className="product">
             <img src={icon24} alt="" />
             <h4>پشتیبانی 24 ساعته</h4>
-            <h6>همیشه هستیم!</h6>
+            <h5>همیشه هستیم!</h5>
           </div>
         </Col>
-        <Col span={4}>
+        <Col span={3}>
           <div className="product">
             <img src={iconhaml} alt="" />
             <h4>ارسال رایگان</h4>
-            <h6>تا دستان شما</h6>
+            <h5>تا دستان شما</h5>
           </div>
 
         </Col>
-        <Col span={4}>
+        <Col span={3}>
           <div className="product">
             <img src={iconpay} alt="" />
             <h4>پرداخت آسان</h4>
-            <h6>نقدی و اعتباری</h6>
+            <h5>نقدی و اعتباری</h5>
           </div>
 
         </Col>
-        <Col span={4}>
+        <Col span={3}>
           <div className="product">
             <img src={iconoff} alt="" />
             <h4>همواره تخفیف</h4>
-            <h6>چی ازاین بهتر؟</h6>
+            <h5>چی ازاین بهتر؟</h5>
           </div>
 
         </Col>
@@ -115,7 +114,7 @@ function App() {
             cover={<img alt="example" src={Rectangle27} />}
           >
             <h3> نام محصول</h3>
-            <s style={{ textAlign: 'center', color: 'red' }}>100,000 تومان</s>
+            <s style={{ textAlign: 'center', color: 'red', float: 'left' }}>100,000 تومان</s>
             <br />
             <h4 style={{ textAlign: 'left' }}>
 
@@ -132,7 +131,7 @@ function App() {
             cover={<img alt="example" src={Rectangle27} />}
           >
             <h3> نام محصول</h3>
-            <s style={{ textAlign: 'center', color: 'red' }}>100,000 تومان</s>
+            <s style={{ textAlign: 'center', color: 'red', float: 'left' }}>100,000 تومان</s>
             <br />
             <h4 style={{ textAlign: 'left' }}>
 
@@ -148,7 +147,7 @@ function App() {
             cover={<img alt="example" src={Rectangle27} />}
           >
             <h3> نام محصول</h3>
-            <s style={{ textAlign: 'center', color: 'red' }}>100,000 تومان</s>
+            <s style={{ textAlign: 'center', color: 'red', float: 'left' }}>100,000 تومان</s>
             <br />
             <h4 style={{ textAlign: 'left' }}>
 
@@ -165,7 +164,7 @@ function App() {
             cover={<img alt="example" src={Rectangle27} />}
           >
             <h3> نام محصول</h3>
-            <s style={{ textAlign: 'center', color: 'red' }}>100,000 تومان</s>
+            <s style={{ textAlign: 'center', color: 'red', float: 'left' }}>100,000 تومان</s>
             <br />
             <h4 style={{ textAlign: 'left' }}>
 
@@ -186,7 +185,7 @@ function App() {
             cover={<img alt="example" src={Rectangle27} />}
           >
             <h3> نام محصول</h3>
-            <s style={{ textAlign: 'center', color: 'red' }}>100,000 تومان</s>
+            <s style={{ textAlign: 'center', color: 'red', float: 'left' }}>100,000 تومان</s>
             <br />
             <h4 style={{ textAlign: 'left' }}>
 
@@ -204,7 +203,7 @@ function App() {
           >
             {/* <Meta title="" description="" /> */}
             <h3> نام محصول</h3>
-            <s style={{ textAlign: 'center', color: 'red' }}>100,000 تومان</s>
+            <s style={{ textAlign: 'center', color: 'red', float: 'left' }}>100,000 تومان</s>
             <br />
             <h4 style={{ textAlign: 'left' }}>
 
@@ -220,7 +219,7 @@ function App() {
             cover={<img alt="example" src={Rectangle27} />}
           >
             <h3> نام محصول</h3>
-            <s style={{ textAlign: 'center', color: 'red' }}>100,000 تومان</s>
+            <s style={{ textAlign: 'center', color: 'red', float: 'left' }}>100,000 تومان</s>
             <br />
             <h4 style={{ textAlign: 'left' }}>
 
@@ -237,7 +236,7 @@ function App() {
             cover={<img alt="example" src={Rectangle27} />}
           >
             <h3> نام محصول</h3>
-            <s style={{ textAlign: 'center', color: 'red' }}>100,000 تومان</s>
+            <s style={{ textAlign: 'center', color: 'red', float: 'left' }}>100,000 تومان</s>
             <br />
             <h4 style={{ textAlign: 'left' }}>
 
@@ -249,7 +248,7 @@ function App() {
         </Col>
       </Row>
 
-      <div className="footers">
+      <footer className="footers">
         <Row className="footer">
           <Col>
             <img src={imgfooter} alt="" style={{ width: '80%' }} />
@@ -281,7 +280,7 @@ function App() {
           </Col>
 
         </Row>
-      </div>
+      </footer>
     </div>
   );
 }
