@@ -2,7 +2,7 @@ import 'antd/dist/antd.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
-  Row, Breadcrumb, Col, Carousel, Divider, InputNumber, Button, Typography,
+  Row, Breadcrumb, Col, Carousel, Divider, InputNumber, Button, Typography, Collapse,
 } from 'antd';
 import { HeartOutlined, HeartTwoTone, ShareAltOutlined } from '@ant-design/icons';
 import Headers from '../component/header';
@@ -14,6 +14,17 @@ const { Paragraph } = Typography;
 function onChange(a, b, c) {
   console.log(a, b, c);
 }
+
+const { Panel } = Collapse;
+
+function callback(key) {
+  console.log(key);
+}
+
+const text = `
+ساعت‌های هوشمند از آن دسته گجت‌هایی هستند که روزبه‌روز بیشتر به محبوبیت آن‌ها افزوده شده و طرفداران بیشتری پیدا می‌کنند. در میان تنوع زیاد این ساعت‌ها اما، ساعت گلکسی واچ اکتیو 2 (Galaxy Watch Active 2) ساخت کمپانی نام آشنا سامسونگ (Samsung) به یکی از انتخاب‌‍‌های محبوب کاربران اندرویدی تبدیل شده است.
+
+`;
 
 function Product() {
   return (
@@ -111,7 +122,7 @@ function Product() {
                 copyable={{
                   icon: [<HeartTwoTone
                     key="copy-icon"
-                    twoToneColor="black"
+                    twoToneColor="blue"
                     style={{ fontSize: '16px', color: 'black' }}
                   />, <HeartOutlined key="copied-icon" twoToneColor="red" style={{ fontSize: '16px', color: 'red' }} />],
                   tooltips: ['like', 'liked'],
@@ -130,7 +141,26 @@ function Product() {
           </Row>
           <Divider />
 
-          <Row>1</Row>
+          <Row>
+            <Col span={24}>
+              <Collapse bordered={false} defaultActiveKey={['1']} expandIconPosition="right">
+                <Panel className="panel" showArrow={false} header="معرفی محصول" key="1" style={{ backgroundColor: 'white', width: '100%', borderBottom: '1px solid #e4e2e2' }}>
+                  <h5>{text}</h5>
+                </Panel>
+                <Panel
+                  showArrow={false}
+                  header="مشخصات ظاهری"
+                  key="2"
+                  style={{ backgroundColor: 'white', width: '100%', borderBottom: ' none' }}
+                  icon={<HeartOutlined />}
+                >
+                  <h5>{text}</h5>
+                </Panel>
+              </Collapse>
+
+            </Col>
+
+          </Row>
         </Col>
         <Col span={6}>3</Col>
       </Row>

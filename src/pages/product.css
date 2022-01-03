@@ -50,3 +50,13 @@
   display: flex;
   margin-top: 30px;
 }
+
+.collapse {
+  border: none;
+  background-color: white;
+  outline: none;
+}
+
+.ant-collapse-icon-position-right > .ant-collapse-item > .ant-collapse-header {
+  padding-right: 0px;
+}
