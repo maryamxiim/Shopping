@@ -1,0 +1,95 @@
+@font-face {
+  font-family: shabnam;
+  src: url(../assets/fonts/Shabnam-Medium.ttf);
+}
+
+body {
+  direction: rtl;
+  font-family: shabnam;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  align-items: center;
+  border-bottom: 1px solid #e7e5e5;
+  padding-bottom: 20px;
+}
+
+.ant-menu {
+  border-bottom: 0px;
+}
+.search {
+  direction: ltr;
+}
+.mim button {
+  margin-left: 30px;
+  direction: rtl;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.layout {
+  display: flex;
+}
+.menu {
+  direction: rtl;
+  display: flex;
+  justify-content: center;
+}
+
+.menus {
+  margin: 0px 10px;
+}
+
+.slide {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product {
+  text-align: center;
+}
+
+.product h4 {
+  color: #17a2b8;
+}
+
+.product-usp {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.line {
+  text-align: "left";
+  color: "red";
+}
+
+.footer {
+  background-color: #343a40;
+}
+
+.footercontent {
+  margin: 50px auto;
+  padding: 50px;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 50px;
+  text-align: right;
+}
+
+.footercontent h3 {
+  color: #17a2b8;
+}
+
+.footercontent h5 {
+  color: white;
+  padding: 5px 0px;
+}

@@ -1,0 +1,32 @@
+.footer {
+  background-color: #343a40;
+}
+
+.footercontent {
+  margin: 50px auto;
+  padding: 50px;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 50px;
+  text-align: right;
+}
+
+.footercontent h3 {
+  color: #17a2b8;
+}
+
+.footercontent h5 {
+  color: white;
+  padding: 5px 0px;
+}
+
+.titr {
+  list-style-type: none;
+}
+
+.titr li {
+  margin: 10px auto;
+  color: white;
+}
