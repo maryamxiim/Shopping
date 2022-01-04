@@ -22,11 +22,11 @@
   padding: 5px 0px;
 }
 
-.titr {
+.title {
   list-style-type: none;
 }
 
-.titr li {
+.title li {
   margin: 10px auto;
   color: white;
 }

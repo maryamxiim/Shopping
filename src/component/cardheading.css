@@ -1,17 +1,12 @@
-.card {
-  /* width: "90%";
-  height: "100%"; */
-  /* width: 700px; */
+.cardHeading {
   background-image: url(../assets/Rectangle21.png);
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-repeat: no-repeat;
   margin: 10px 10px 0px 20px;
-  /* height: 600px; */
   height: 360px;
   border-radius: 0px 15px 15px 0px;
   text-align: right;
   padding: 20px;
-  /* margin: 10; */
 }

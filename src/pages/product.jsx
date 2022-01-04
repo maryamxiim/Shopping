@@ -26,18 +26,20 @@ import flag from '../assets/flag.png';
 import message from '../assets/message.png';
 import bag from '../assets/bag.png';
 import picture from '../assets/Rectangle39.png';
-
+import Rectangle27 from '../assets/Rectangle27.png';
+import Cards from '../component/card';
+import saat1 from '../assets/saat1.jpg';
+import saat2 from '../assets/saat2.jpg';
+import saat3 from '../assets/saat3.jpg';
+import saat4 from '../assets/saat4.jpg';
 import './product.css';
 
 const { TabPane } = Tabs;
-
 const { Paragraph } = Typography;
 function onChange(a, b, c) {
   console.log(a, b, c);
 }
-
 const { Panel } = Collapse;
-
 function callback(key) {
   console.log(key);
 }
@@ -53,7 +55,7 @@ const text = `
 
 function Product() {
   return (
-    <div className="App">
+    <div>
       <Headers />
       <Row className="breadcrumb">
         <Breadcrumb>
@@ -122,7 +124,7 @@ function Product() {
             </Col>
           </Row>
           <Row>
-            <Col span={11} className="icon">
+            <Col span={11} className="productdetails-icon">
               <Paragraph
                 className="like"
                 copyable={{
@@ -149,7 +151,7 @@ function Product() {
               />
               <h5>اضافه کردن به لیست علاقه مندی ها</h5>
             </Col>
-            <Col span={11} className="icon">
+            <Col span={11} className="productdetails-icon">
               <Link to="/">
                 <ShareAltOutlined
                   style={{
@@ -166,8 +168,6 @@ function Product() {
             <Col span={24}>
               <Collapse bordered={false} defaultActiveKey={['1']} expandIconPosition="right">
                 <Panel
-                  className="panel"
-                  showArrow={false}
                   header="معرفی محصول"
                   key="1"
                   style={{
@@ -178,7 +178,6 @@ function Product() {
                   <h5>{text}</h5>
                 </Panel>
                 <Panel
-                  showArrow={false}
                   header="مشخصات ظاهری"
                   key="2"
                   style={{
@@ -296,14 +295,6 @@ function Product() {
               <Col span={8} style={{ textAlign: 'right' }} className="reaport">
                 <h5>گزارش مشکل آگهی</h5>
               </Col>
-              {/* <Col span={12}><h5>پست پیشتاز - ارسال رایگان</h5></Col> */}
-              {/* <Col span={2}>
-              <img src={shipping} alt="" style={{ width: '20px' }} />
-            </Col>
-            <Col span={10} className='reaport'>
-
-              <h5>گزارش مشکل آگهی</h5>
-            </Col> */}
             </Row>
           </Link>
         </Col>
@@ -312,9 +303,9 @@ function Product() {
         <Col span={14} className="des">
           <Tabs defaultActiveKey="1" onChange={callback}>
             <TabPane tab="نقد و بررسی" key="1">
-              <Row className="descriptionss">
+              <Row className="description">
                 <Col span={14}>
-                  <h5 className="description">
+                  <h5 className="description-caption">
                     ساعت‌های هوشمند از آن دسته گجت‌هایی هستند که روزبه‌روز بیشتر به محبوبیت آن‌ها
                     افزوده شده و طرفداران بیشتری پیدا می‌کنند. در میان تنوع زیاد این ساعت‌ها اما،
                     ساعت گلکسی واچ اکتیو 2 (Galaxy Watch Active 2) ساخت کمپانی نام آشنا سامسونگ
@@ -330,14 +321,14 @@ function Product() {
                   </h5>
                 </Col>
                 <Col span={10} className="imgdescription">
-                  <img src={picture} alt="" width="90%" />
+                  <img src={slider} alt="" width="90%" />
                 </Col>
               </Row>
             </TabPane>
             <TabPane tab="ویژگی" key="2">
-              <Row className="descriptionss">
+              <Row className="description">
                 <Col span={14}>
-                  <h5 className="description">
+                  <h5 className="description-caption">
                     ساعت‌های هوشمند از آن دسته گجت‌هایی هستند که روزبه‌روز بیشتر به محبوبیت آن‌ها
                     افزوده شده و طرفداران بیشتری پیدا می‌کنند. در میان تنوع زیاد این ساعت‌ها اما،
                     ساعت گلکسی واچ اکتیو 2 (Galaxy Watch Active 2) ساخت کمپانی نام آشنا سامسونگ
@@ -359,6 +350,37 @@ function Product() {
             </TabPane>
           </Tabs>
         </Col>
+      </Row>
+      <Row>
+        <Row className="title-similar">
+          {' '}
+          <Col span={16}>
+            {' '}
+            <h1>محصولات مشابه</h1>
+          </Col>
+        </Row>
+        <Row className="silmilarproduct">
+          <Col span={4}>
+            <Link to="/shopping/product">
+              <Cards img={saat1} productname="محصول1" price="100,000" off="80,000" />
+            </Link>
+          </Col>
+          <Col span={4}>
+            <Link to="/shopping/product">
+              <Cards img={saat2} productname="محصول2" price="200,000" off="140,000" />
+            </Link>
+          </Col>
+          <Col span={4}>
+            <Link to="/shopping/product">
+              <Cards img={saat3} productname="محصول3" price="300,000" off="250,000" />
+            </Link>
+          </Col>
+          <Col span={4}>
+            <Link to="/shopping/product">
+              <Cards img={saat4} productname="محصول4" price="400,000" off="399,000" />
+            </Link>
+          </Col>
+        </Row>
       </Row>
       <Footer />
     </div>

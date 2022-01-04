@@ -11,15 +11,10 @@ hr {
   width: 250px;
   height: 1px;
   background-color: rgba(221, 217, 217, 0.5);
-  /* border: none; */
   outline: none;
 }
 
-/* .heys {
-  border: 1px solid purple;
-  margin: 20px;
-} */
-.heys {
+.menus {
   margin-right: 40px;
   border: 1px solid #dddada;
   padding: 10px;
@@ -36,7 +31,7 @@ hr {
   right: 220px;
 }
 
-.mmm {
+.radioitem {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
@@ -44,8 +39,7 @@ hr {
   margin-top: 5px;
 }
 
-.lll {
-  /* width: 600px; */
+.menu-item {
   margin-right: 20px;
 }
 
@@ -54,13 +48,14 @@ hr {
   padding-left: 12px;
 }
 
-.ppp {
+.resultproduct {
+  margin-top: 20px;
   display: flex;
   justify-content: space-around;
   margin-right: 10px;
 }
 
-.ddd {
+.titleproduct {
   display: flex;
   justify-content: stretch;
   margin: 30px 60px;
@@ -75,7 +70,7 @@ hr {
   padding-right: 0px;
 }
 
-.nnn {
+.resultshow {
   display: flex;
   justify-content: start;
   padding: 15px 10px;
