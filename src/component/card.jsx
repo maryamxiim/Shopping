@@ -12,7 +12,6 @@ function Cards({
         style={{ width: 240 }}
         cover={<img alt="example" src={img} />}
       >
-
         <h3>
           {' '}
           {productname}
@@ -25,14 +24,11 @@ function Cards({
         </s>
         <br />
         <h4 style={{ textAlign: 'left' }}>
-
           {off}
           {' '}
           تومان
-
         </h4>
       </Card>
-
     </div>
   );
 }

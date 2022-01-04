@@ -4,9 +4,7 @@ import './App.less';
 import MainRouter from './router/mainrouter';
 
 const App = function () {
-  return (
-    <MainRouter />
-  );
+  return <MainRouter />;
 };
 
 export default App;

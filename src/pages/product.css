@@ -32,6 +32,7 @@
   width: 200px;
   border: 1.5px solid #595959;
   height: 40px;
+  font-size: 13px;
 }
 
 .buy:focus {
@@ -44,6 +45,7 @@
   width: 200px;
   /* border: 1.5px solid #595959; */
   height: 40px;
+  font-size: 13px;
 }
 
 .icon {
@@ -59,4 +61,52 @@
 
 .ant-collapse-icon-position-right > .ant-collapse-item > .ant-collapse-header {
   padding-right: 0px;
+}
+
+.details-seller {
+  padding: 10px;
+  border: 1px solid #f5f5f5;
+  border-radius: 16px;
+  height: 100%;
+  margin: 20px 30px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+}
+
+.detailofseller {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+/* 
+.reaport {
+  display: flex;
+  justify-content: center;
+} */
+
+.reaport > h5 {
+  /* text-align: center; */
+  color: #dc3545;
+  /* margin: 15px; */
+}
+
+.des {
+  margin: auto;
+}
+
+.ant-tabs-tab {
+  margin-left: 40px;
+}
+
+.description {
+  margin-left: 60px;
+  line-height: 2.5;
+}
+.descriptionss {
+  margin-top: 15px;
+}
+
+.imgdescription {
+  /* margin: 0px 10px; */
 }

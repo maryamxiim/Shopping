@@ -26,7 +26,7 @@ const menu = (
     <Menu.ItemGroup title="محصولات دسته بندی کالا دیجیتال:" />
     {/* <Menu.Item>3rddf menu item</Menu.Item> */}
 
-    <SubMenu title="تلفن همراه" className="submenu" icon={<DownOutlined />}>
+    <SubMenu title="تلفن همراه" className="submenu">
 
       <Menu.Item className="submenu-item">
         سامسونگ

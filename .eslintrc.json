@@ -1,36 +1,54 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true,
-        "node": true
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": [
-        "plugin:react/recommended",
-        "airbnb"
-    ],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-      },
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 13,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-        "react/prop-types":"off",
-        "react/jsx-props-no-spreading": "off",
-        "import/no-extraneous-dependencies": "off",
-        "jsx-a11y/click-events-have-key-events": "off",
-        "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
-        "no-use-before-define":"off",
-        "linebreak-style":"off",
-        "no-unused-vars":"off"
-        // "import/no-named-as-default": 0
-    }
+    "ecmaVersion": 13,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
+    "import/no-extraneous-dependencies": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+    "no-use-before-define": "off",
+    "linebreak-style": "off",
+    "no-unused-vars": "off",
+    // "prettier/prettier": "warn"
+    // "quotes": [2, "single", { "avoidEscape": true }],
+    // "prettier/prettier": [
+    //   "warn",
+    //   {
+    //     "singleQuote": true,
+    //     "semi": true
+    //   }
+    // ]
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  }
+  // "import/no-named-as-default": 0
 }
