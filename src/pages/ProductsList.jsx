@@ -6,6 +6,19 @@ import Headers from '../component/header';
 import Footer from '../component/footer';
 import Cards from '../component/card';
 import Rectangle27 from '../assets/Rectangle27.png';
+import img1 from '../assets/image.png';
+import image2 from '../assets/image2.jpg';
+import image3 from '../assets/image3.jpg';
+import image4 from '../assets/image4.jpg';
+import image5 from '../assets/image5.jpg';
+import image6 from '../assets/image6.jpg';
+import image7 from '../assets/image7.jpg';
+import image8 from '../assets/image8.jpg';
+import image9 from '../assets/image9.jpg';
+import image10 from '../assets/image10.jpg';
+import image11 from '../assets/image11.jpg';
+import image12 from '../assets/image12.jpg';
+
 import './productslist.css';
 
 const { SubMenu } = Menu;
@@ -31,10 +44,10 @@ function ProductsList() {
             mode="inline"
             className="menu-item">
             <SubMenu key="sub1" title="دسته بندی">
-              <Menu.Item key="1">موبایل</Menu.Item>
-              <Menu.Item key="2">تجهیزات موبایل</Menu.Item>
-              <Menu.Item key="3"> لپ تاپ</Menu.Item>
-              <Menu.Item key="4"> تجهیزات لپ تاپ</Menu.Item>
+              <Menu.Item key="1">ساعت هوشمند</Menu.Item>
+              <Menu.Item key="2">ساعت مچی </Menu.Item>
+              <Menu.Item key="3"> ساعت زنانه </Menu.Item>
+              <Menu.Item key="4"> ساعت مردانه </Menu.Item>
             </SubMenu>
             <SubMenu key="sub2" title="برند">
               <Menu.Item key="5">تست 5</Menu.Item>
@@ -115,66 +128,66 @@ function ProductsList() {
           <Row className="resultproduct">
             <Col>
               <Link to="/shopping/product">
-                <Cards img={Rectangle27} productname="محصول 1" price="200,000" off="20,000" />
+                <Cards img={img1} productname="محصول 1" price="200,000" off="20,000" />
               </Link>
             </Col>
             <Col>
               <Link to="/shopping/product">
-                <Cards img={Rectangle27} productname="محصول 2" price="200,000" off="20,000" />
+                <Cards img={image2} productname="محصول 2" price="200,000" off="20,000" />
               </Link>
             </Col>
             <Col>
               <Link to="/shopping/product">
-                <Cards img={Rectangle27} productname="محصول 3" price="200,000" off="20,000" />
+                <Cards img={image3} productname="محصول 3" price="200,000" off="20,000" />
               </Link>
             </Col>
             <Col>
               <Link to="/shopping/product">
-                <Cards img={Rectangle27} productname="محصول 4" price="200,000" off="20,000" />
-              </Link>
-            </Col>
-          </Row>
-          <Row className="resultproduct">
-            <Col>
-              <Link to="/shopping/product">
-                <Cards img={Rectangle27} productname="محصول 5" price="200,000" off="20,000" />
-              </Link>
-            </Col>
-            <Col>
-              <Link to="/shopping/product">
-                <Cards img={Rectangle27} productname="محصول 6" price="200,000" off="20,000" />
-              </Link>
-            </Col>
-            <Col>
-              <Link to="/shopping/product">
-                <Cards img={Rectangle27} productname="محصول 7" price="200,000" off="20,000" />
-              </Link>
-            </Col>
-            <Col>
-              <Link to="/shopping/product">
-                <Cards img={Rectangle27} productname="محصول 8" price="200,000" off="20,000" />
+                <Cards img={image4} productname="محصول 4" price="200,000" off="20,000" />
               </Link>
             </Col>
           </Row>
           <Row className="resultproduct">
             <Col>
               <Link to="/shopping/product">
-                <Cards img={Rectangle27} productname="محصول 9" price="200,000" off="20,000" />
+                <Cards img={image5} productname="محصول 5" price="200,000" off="20,000" />
               </Link>
             </Col>
             <Col>
               <Link to="/shopping/product">
-                <Cards img={Rectangle27} productname="محصول 10" price="200,000" off="20,000" />
+                <Cards img={image6} productname="محصول 6" price="200,000" off="20,000" />
               </Link>
             </Col>
             <Col>
               <Link to="/shopping/product">
-                <Cards img={Rectangle27} productname="محصول 11" price="200,000" off="20,000" />
+                <Cards img={image7} productname="محصول 7" price="200,000" off="20,000" />
               </Link>
             </Col>
             <Col>
               <Link to="/shopping/product">
-                <Cards img={Rectangle27} productname="محصول 12" price="200,000" off="20,000" />
+                <Cards img={image8} productname="محصول 8" price="200,000" off="20,000" />
+              </Link>
+            </Col>
+          </Row>
+          <Row className="resultproduct">
+            <Col>
+              <Link to="/shopping/product">
+                <Cards img={image9} productname="محصول 9" price="200,000" off="20,000" />
+              </Link>
+            </Col>
+            <Col>
+              <Link to="/shopping/product">
+                <Cards img={image10} productname="محصول 10" price="200,000" off="20,000" />
+              </Link>
+            </Col>
+            <Col>
+              <Link to="/shopping/product">
+                <Cards img={image11} productname="محصول 11" price="200,000" off="20,000" />
+              </Link>
+            </Col>
+            <Col>
+              <Link to="/shopping/product">
+                <Cards img={image12} productname="محصول 12" price="200,000" off="20,000" />
               </Link>
             </Col>
           </Row>

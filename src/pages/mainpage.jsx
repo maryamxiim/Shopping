@@ -7,8 +7,9 @@ import icon24 from '../assets/icon24.png';
 import iconhaml from '../assets/iconhaml.png';
 import iconpay from '../assets/iconpay.png';
 import iconoff from '../assets/iconoff.png';
-import slide3 from '../assets/slide3.jpg';
-import slide2 from '../assets/slide2.jpg';
+import slide22 from '../assets/slide22.jpg';
+import left1 from '../assets/left1.jpg';
+import left2 from '../assets/left2.jpg';
 import Headers from '../component/header';
 import Footer from '../component/footer';
 import Productsrow from '../component/produtsrow';
@@ -19,11 +20,22 @@ function Mainpage() {
     <div>
       <Headers />
       <Row style={{ margin: '30px' }} className="slide">
-        <Col span={16}>
-          <img src={slide3} alt="" style={{ width: '100%', borderRadius: '16px' }} />
+        <Col span={15}>
+          <img src={slide22} alt="" style={{ width: '100%', borderRadius: '16px' }} />
         </Col>
-        <Col span={5}>
-          <img src={picture3} alt="" style={{ width: '100%' }} />
+        <Col span={7}>
+          <Row>
+            <Col>
+              <img src={left1} alt="" style={{ width: '100%', borderRadius: '16px' }} />
+            </Col>
+            <Col>
+              <img
+                src={left2}
+                alt=""
+                style={{ width: '100%', marginTop: '25px', borderRadius: '16px' }}
+              />
+            </Col>
+          </Row>
         </Col>
       </Row>
       <Row className="product-usp">

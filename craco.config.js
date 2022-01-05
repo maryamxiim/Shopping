@@ -26,12 +26,12 @@ module.exports = {
               '@layout-body-background': '#ffffff',
               '@layout-header-background': '#ffffff',
               '@layout-header-padding': '0 32px',
-              '@layout-footer-padding': '24px 32px',
+              '@layout-footer-padding': '24px 32px'
             },
-            javascriptEnabled: true,
-          },
-        },
-      },
-    },
-  ],
+            javascriptEnabled: true
+          }
+        }
+      }
+    }
+  ]
 };
