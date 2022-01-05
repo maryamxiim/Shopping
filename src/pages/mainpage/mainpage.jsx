@@ -1,19 +1,19 @@
 import 'antd/dist/antd.css';
 import React from 'react';
 import { Row, Col } from 'antd';
-import picture2 from '../assets/Rectangle19.png';
-import picture3 from '../assets/Rectangle20.png';
-import icon24 from '../assets/icon24.png';
-import iconhaml from '../assets/iconhaml.png';
-import iconpay from '../assets/iconpay.png';
-import iconoff from '../assets/iconoff.png';
-import slide22 from '../assets/slide22.jpg';
-import left1 from '../assets/left1.jpg';
-import left2 from '../assets/left2.jpg';
-import Headers from '../component/header';
-import Footer from '../component/footer';
-import Productsrow from '../component/produtsrow';
-import Productsrow2 from '../component/produtsrow2';
+import picture2 from '../../assets/Rectangle19.png';
+import picture3 from '../../assets/Rectangle20.png';
+import icon24 from '../../assets/icon24.png';
+import iconhaml from '../../assets/iconhaml.png';
+import iconpay from '../../assets/iconpay.png';
+import iconoff from '../../assets/iconoff.png';
+import slide22 from '../../assets/slide22.jpg';
+import left1 from '../../assets/left1.jpg';
+import left2 from '../../assets/left2.jpg';
+import Headers from '../../component/header';
+import Footer from '../../component/footer';
+import Productsrow from '../../component/produtsrow';
+import Productsrow2 from '../../component/produtsrow2';
 import './mainpage.css';
 
 function Mainpage() {

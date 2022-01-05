@@ -3,7 +3,8 @@
 }
 
 .footercontent {
-  margin: 50px auto;
+  /* margin: 50px auto; */
+  margin: auto;
   padding: 50px;
   width: 80%;
   display: flex;
@@ -11,6 +12,8 @@
   text-align: center;
   margin-top: 50px;
   text-align: right;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
 }
 
 .footercontent h3 {
@@ -30,3 +33,13 @@
   margin: 10px auto;
   color: white;
 }
+
+.version{
+  /* height: 20px; */
+  /* margin: 20px auto; */
+  display: flex;
+  justify-content: center;
+  padding: 5px 0px;
+  color: white;
+  font-size: 10px;
+background-color: rgba(255, 255, 255, 0.2);}

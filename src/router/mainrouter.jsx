@@ -1,8 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Mainpage from '../pages/mainpage';
-import ProductsList from '../pages/ProductsList';
-import Product from '../pages/product';
+
+import { Mainpage, ProductsList, Product } from '../pages';
+// import Mainpage from '../pages/mainpage/mainpage';
+// import ProductsList from '../pages/productslist/productsList';
+// import Product from '../pages/product';
 
 const mainRouter = () => (
   <Router>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Row, Col } from 'antd';
 import imgfooter from '../assets/Group2-2.png';
+import pjson from '../../package.json';
 import './footer.css';
 
 function Footer() {
@@ -108,6 +109,9 @@ function Footer() {
             </Link>
           </ul>
         </Col>
+      </Row>
+      <Row className="version">
+        <Col>{`version ${pjson.version}`}</Col>
       </Row>
     </footer>
   );
