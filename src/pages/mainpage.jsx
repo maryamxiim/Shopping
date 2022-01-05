@@ -13,6 +13,7 @@ import left2 from '../assets/left2.jpg';
 import Headers from '../component/header';
 import Footer from '../component/footer';
 import Productsrow from '../component/produtsrow';
+import Productsrow2 from '../component/produtsrow2';
 import './mainpage.css';
 
 function Mainpage() {
@@ -71,10 +72,10 @@ function Mainpage() {
       {/* <Row></Row> */}
 
       <Row>
-        <Productsrow />
+        <Productsrow header="sss" />
       </Row>
       <Row>
-        <Productsrow />
+        <Productsrow2 />
       </Row>
 
       <Footer />

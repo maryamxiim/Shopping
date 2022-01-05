@@ -1,5 +1,5 @@
-.cardHeading {
-  background-image: url(../assets/exhead.png);
+.cardHeading2 {
+  background-image: url(../assets/exhead2.png);
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -10,9 +10,9 @@
   border-radius: 0px 15px 15px 0px;
   text-align: right;
   padding: 20px;
+  color: orange ;
 }
 
-.cardHeading h2 , .cardHeading h4 {
-  color: #D6432F
-  ;
+.cardHeading2 h4 , .cardHeading2 h1 { 
+  color: white;
 }

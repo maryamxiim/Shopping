@@ -5,9 +5,9 @@ function CardHeading({ header, title, content }) {
   return (
     <div className="cardHeading">
       <h4>{header}</h4>
-      <h1>
+      <h2>
         <b>{title}</b>
-      </h1>
+      </h2>
       <h4>{content}</h4>
     </div>
   );
