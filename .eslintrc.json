@@ -34,6 +34,8 @@
     "no-use-before-define": "off",
     "linebreak-style": "off",
     "no-unused-vars": "off",
+    "import/export": "off",
+    "import/prefer-default-export": "off",
     // "prettier/prettier": "warn"
     // "quotes": [2, "single", { "avoidEscape": true }],
     // "prettier/prettier": [
