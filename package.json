@@ -1,7 +1,7 @@
 {
   "homepage": "https://maryamxiim.github.io/Shopping",
   "name": "my-app",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "create[ the main page, list products page, and product page]",
   "private": true,
   "dependencies": {
