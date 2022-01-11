@@ -19,21 +19,23 @@ import image10 from '../../assets/image10.jpg';
 import image11 from '../../assets/image11.jpg';
 import image12 from '../../assets/image12.jpg';
 
-import './productslist.css';
+import './productslist.scss';
 
 const { SubMenu } = Menu;
 
 function ProductsList() {
   return (
-    <div>
+    <div className="products-list">
       <Headers />
-      <div className="titleproduct">
-        <h2>
-          نتایج جستجو برای عنوان :<b> ساعت هوشمند </b>
-        </h2>
-      </div>
-      <Row>
-        <Col className="menus" span={5}>
+      <Row className="title-product">
+        <Col lg={22} xs={23}>
+          <h2>
+            نتایج جستجو برای عنوان :<b> ساعت هوشمند </b>
+          </h2>
+        </Col>
+      </Row>
+      <Row className="side">
+        <Col className="menus" lg={5} xs={22}>
           <Menu
             onClick={(e) => {
               console.log('click ', e);
@@ -67,25 +69,22 @@ function ProductsList() {
             </SubMenu>
           </Menu>
           <Divider style={{ width: 100 }} />
-          {/* <br />
-          <hr />
-          <br /> */}
 
-          <div className="radioitem">
+          <div className="radio-item">
             <div>فقط نمایش محصولات موجود</div>
             <div>
               {' '}
               <Switch size="small" defaultChecked />
             </div>
           </div>
-          <div className="radioitem">
+          <div className="radio-item">
             <div>فقط نمایش محصولات تخفیف دار</div>
             <div>
               {' '}
               <Switch size="small" defaultChecked />
             </div>
           </div>
-          <div className="radioitem">
+          <div className="radio-item">
             <div>فقط کالاهای اصل</div>
             <div>
               {' '}
@@ -93,99 +92,99 @@ function ProductsList() {
             </div>
           </div>
         </Col>
-        <Col span={17}>
+        <Col lg={17} xs={24}>
           {/* <Productsrow />
            */}
-          <Row className="resultshow">
-            <Col span={5} className="show">
+          <Row className="result-show">
+            <Col lg={5} xs={24} className="show">
               ترتیب نمایش نتایج بر اساس:
             </Col>
-            <Col span={3}>
+            <Col lg={3} xs={24}>
               <Button type="text" ghost className="btn-show">
                 {' '}
                 پربازدیدترین
               </Button>
             </Col>
-            <Col span={3}>
+            <Col lg={3} xs={24}>
               <Button type="text" ghost className="btn-show">
                 {' '}
                 جدیدترین
               </Button>
             </Col>
-            <Col span={4}>
+            <Col lg={4} xs={24}>
               <Button type="text" ghost className="btn-show">
                 {' '}
                 قیمت: از کم به زیاد
               </Button>
             </Col>
-            <Col span={4}>
+            <Col lg={4} xs={24}>
               <Button type="text" ghost className="btn-show">
                 {' '}
                 قیمت: از زیاد به کم
               </Button>
             </Col>
           </Row>
-          <Row className="resultproduct">
-            <Col>
+          <Row className="result-product">
+            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
                 <Cards img={img1} productname="محصول 1" price="200,000" off="20,000" />
               </Link>
             </Col>
-            <Col>
+            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
                 <Cards img={image2} productname="محصول 2" price="200,000" off="20,000" />
               </Link>
             </Col>
-            <Col>
+            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
                 <Cards img={image3} productname="محصول 3" price="200,000" off="20,000" />
               </Link>
             </Col>
-            <Col>
+            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
                 <Cards img={image4} productname="محصول 4" price="200,000" off="20,000" />
               </Link>
             </Col>
           </Row>
-          <Row className="resultproduct">
-            <Col>
+          <Row className="result-product">
+            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
                 <Cards img={image5} productname="محصول 5" price="200,000" off="20,000" />
               </Link>
             </Col>
-            <Col>
+            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
                 <Cards img={image6} productname="محصول 6" price="200,000" off="20,000" />
               </Link>
             </Col>
-            <Col>
+            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
                 <Cards img={image7} productname="محصول 7" price="200,000" off="20,000" />
               </Link>
             </Col>
-            <Col>
+            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
                 <Cards img={image8} productname="محصول 8" price="200,000" off="20,000" />
               </Link>
             </Col>
           </Row>
-          <Row className="resultproduct">
-            <Col>
+          <Row className="result-product">
+            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
                 <Cards img={image9} productname="محصول 9" price="200,000" off="20,000" />
               </Link>
             </Col>
-            <Col>
+            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
                 <Cards img={image10} productname="محصول 10" price="200,000" off="20,000" />
               </Link>
             </Col>
-            <Col>
+            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
                 <Cards img={image11} productname="محصول 11" price="200,000" off="20,000" />
               </Link>
             </Col>
-            <Col>
+            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
                 <Cards img={image12} productname="محصول 12" price="200,000" off="20,000" />
               </Link>

@@ -6,7 +6,7 @@ function Cards({ img, productname, price, off }) {
     <div className="Card">
       <Card
         hoverable
-        style={{ width: 240 }}
+        style={{ width: '100%' }}
         cover={<img alt="example" src={img} style={{ padding: '10px' }} />}>
         <h3> {productname}</h3>
 

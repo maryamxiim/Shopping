@@ -14,55 +14,54 @@ import Headers from '../../component/header';
 import Footer from '../../component/footer';
 import Productsrow from '../../component/produtsrow';
 import Productsrow2 from '../../component/produtsrow2';
-import './mainpage.css';
+import './mainpage.scss';
 
 function Mainpage() {
   return (
-    <div>
+    <div className="mainpage">
       <Headers />
-      <Row style={{ margin: '30px' }} className="slide">
-        <Col span={15}>
-          <img src={slide22} alt="" style={{ width: '100%', borderRadius: '16px' }} />
+      <Row style={{ padding: '20px' }} className="slide">
+        <Col lg={15} xs={24}>
+          <img
+            src={slide22}
+            alt=""
+            style={{ maxWidth: '100%', borderRadius: '16px', marginBottom: '25px' }}
+          />
         </Col>
-        <Col span={7}>
-          <Row>
-            <Col>
-              <img src={left1} alt="" style={{ width: '100%', borderRadius: '16px' }} />
-            </Col>
-            <Col>
-              <img
-                src={left2}
-                alt=""
-                style={{ width: '100%', marginTop: '25px', borderRadius: '16px' }}
-              />
-            </Col>
-          </Row>
+        <Col lg={7} xs={24}>
+          <img src={left1} alt="" style={{ maxWidth: '100%', borderRadius: '16px' }} />
+
+          <img
+            src={left2}
+            alt=""
+            style={{ maxWidth: '100%', marginTop: '25px', borderRadius: '16px' }}
+          />
         </Col>
       </Row>
       <Row className="product-usp">
-        <Col span={3}>
-          <div className="productusp-item">
+        <Col xl={3} xs={12} style={{ marginBottom: '5px' }}>
+          <div className="product-usp-item">
             <img src={icon24} alt="" />
             <h4>پشتیبانی 24 ساعته</h4>
             <h5>همیشه هستیم!</h5>
           </div>
         </Col>
-        <Col span={3}>
-          <div className="productusp-item">
+        <Col xl={3} xs={12}>
+          <div className="product-usp-item">
             <img src={iconhaml} alt="" />
             <h4>ارسال رایگان</h4>
             <h5>تا دستان شما</h5>
           </div>
         </Col>
-        <Col span={3}>
-          <div className="productusp-item">
+        <Col xl={3} xs={12} style={{ marginBottom: '5px' }}>
+          <div className="product-usp-item">
             <img src={iconpay} alt="" />
             <h4>پرداخت آسان</h4>
             <h5>نقدی و اعتباری</h5>
           </div>
         </Col>
-        <Col span={3}>
-          <div className="productusp-item">
+        <Col xl={3} xs={12}>
+          <div className="product-usp-item">
             <img src={iconoff} alt="" />
             <h4>همواره تخفیف</h4>
             <h5>چی ازاین بهتر؟</h5>
@@ -72,7 +71,7 @@ function Mainpage() {
       {/* <Row></Row> */}
 
       <Row>
-        <Productsrow header="sss" />
+        <Productsrow header="sss" products={[{}]} />
       </Row>
       <Row>
         <Productsrow2 />

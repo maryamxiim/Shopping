@@ -32,7 +32,7 @@ import saat1 from '../../assets/saat1.jpg';
 import saat2 from '../../assets/saat2.jpg';
 import saat3 from '../../assets/saat3.jpg';
 import saat4 from '../../assets/saat4.jpg';
-import './product.css';
+import './product.scss';
 
 const { TabPane } = Tabs;
 const { Paragraph } = Typography;
@@ -55,7 +55,7 @@ const text = `
 
 function Product() {
   return (
-    <div>
+    <div className="product">
       <Headers />
       <Row className="breadcrumb">
         <Breadcrumb>
@@ -64,24 +64,24 @@ function Product() {
           <Breadcrumb.Item>سامسونگ</Breadcrumb.Item>
         </Breadcrumb>
       </Row>
-      <Row className="productslider">
-        <Col span={7}>
+      <Row className="product-slider">
+        <Col lg={7} xs={24}>
           <Carousel afterChange={onChange}>
             <div>
-              <img src={slider} alt="" />
+              <img width="100%" src={slider} alt="" />
             </div>
             <div>
-              <img src={slider} alt="" />
+              <img width="100%" src={slider} alt="" />
             </div>
             <div>
-              <img src={slider} alt="" />
+              <img width="100%" src={slider} alt="" />
             </div>
             <div>
-              <img src={slider} alt="" />
+              <img width="100%" src={slider} alt="" />
             </div>
           </Carousel>
         </Col>
-        <Col span={9} className="productdetails">
+        <Col lg={9} xs={24} className="product-details">
           <Row>
             <h1>Galaxy watch active 2</h1>
           </Row>
@@ -101,9 +101,9 @@ function Product() {
             </Col>
           </Row>
           <Row>
-            <Col span={3}>
+            <Col lg={3} xs={24}>
               <InputNumber
-                className="inputnumber"
+                className="input-number"
                 min={1}
                 max={10}
                 defaultValue={2}
@@ -111,20 +111,20 @@ function Product() {
                 size="small"
               />
             </Col>
-            <Col span={10}>
-              <Button type="primary" className="addtobasket">
+            <Col lg={10} xs={24}>
+              <Button type="primary" className="add-to-basket">
                 <img src={bag} alt="" style={{ width: '20px' }} />
                 &nbsp; اضافه کردن به زنبیل
               </Button>
             </Col>
-            <Col span={10}>
+            <Col lg={10} xs={24}>
               <Button type="text" className="buy">
                 خرید مستقیم
               </Button>
             </Col>
           </Row>
           <Row>
-            <Col span={11} className="productdetails-icon">
+            <Col span={11} className="product-details-icon">
               <Paragraph
                 className="like"
                 copyable={{
@@ -151,7 +151,7 @@ function Product() {
               />
               <h5>اضافه کردن به لیست علاقه مندی ها</h5>
             </Col>
-            <Col span={11} className="productdetails-icon">
+            <Col span={11} className="product-details-icon">
               <Link to="/">
                 <ShareAltOutlined
                   style={{
@@ -174,10 +174,12 @@ function Product() {
                     backgroundColor: 'white',
                     width: '100%',
                     borderBottom: '1px solid #e4e2e2'
-                  }}>
+                  }}
+                  showArrow={false}>
                   <h5>{text}</h5>
                 </Panel>
                 <Panel
+                  showArrow={false}
                   header="مشخصات ظاهری"
                   key="2"
                   style={{
@@ -192,8 +194,8 @@ function Product() {
             </Col>
           </Row>
         </Col>
-        <Col span={6} className="details-seller">
-          <Row className="detailofseller">
+        <Col lg={6} xs={24} className="details-seller">
+          <Row className="detail-of-seller">
             <Col span={2}>
               <img src={shop} alt="" style={{ width: '20px' }} />
             </Col>
@@ -210,7 +212,7 @@ function Product() {
             </Col>
           </Row>
           <Divider />
-          <Row className="detailofseller">
+          <Row className="detail-of-seller">
             <Button
               type="primary"
               ghost
@@ -223,7 +225,7 @@ function Product() {
               &nbsp; شروع گفتگو با فروشنده
             </Button>
           </Row>
-          <Row className="detailofseller">
+          <Row className="detail-of-seller">
             <Col span={2}>
               <img src={call} alt="" style={{ width: '20px' }} />
             </Col>
@@ -239,7 +241,7 @@ function Product() {
               <h5>۰۹۸۷۶۵۴۳۲۱</h5>
             </Col>
           </Row>
-          <Row className="detailofseller">
+          <Row className="detail-of-seller">
             <Col span={2}>
               <img src={location} alt="" style={{ width: '20px' }} />
             </Col>
@@ -255,7 +257,7 @@ function Product() {
               <h5>چهارمحال بختیاری شهرکرد</h5>
             </Col>
           </Row>
-          <Row className="detailofseller">
+          <Row className="detail-of-seller">
             <Col span={2}>
               <img src={grantee} alt="" style={{ width: '20px' }} />
             </Col>
@@ -271,7 +273,7 @@ function Product() {
               <h5>ضمانت بازگشت 7 رdوزه کالا</h5>
             </Col>
           </Row>
-          <Row className="detailofseller">
+          <Row className="detail-of-seller">
             <Col span={2}>
               <img src={shipping} alt="" style={{ width: '20px' }} />
             </Col>
@@ -288,7 +290,7 @@ function Product() {
             </Col>
           </Row>
           <Link to="/">
-            <Row className="detailofseller">
+            <Row className="detail-of-seller">
               <Col span={2}>
                 <img src={flag} alt="" style={{ width: '20px' }} />
               </Col>
@@ -300,11 +302,11 @@ function Product() {
         </Col>
       </Row>
       <Row>
-        <Col span={14} className="des">
+        <Col lg={14} className="des">
           <Tabs defaultActiveKey="1" onChange={callback}>
             <TabPane tab="نقد و بررسی" key="1">
               <Row className="description">
-                <Col span={14}>
+                <Col lg={12} xs={22}>
                   <h5 className="description-caption">
                     ساعت‌های هوشمند از آن دسته گجت‌هایی هستند که روزبه‌روز بیشتر به محبوبیت آن‌ها
                     افزوده شده و طرفداران بیشتری پیدا می‌کنند. در میان تنوع زیاد این ساعت‌ها اما،
@@ -320,7 +322,7 @@ function Product() {
                     کاربران فراهم کرده است.
                   </h5>
                 </Col>
-                <Col span={10} className="imgdescription">
+                <Col lg={10} xs={24} className="img-description">
                   <img src={slider} alt="" width="90%" />
                 </Col>
               </Row>
@@ -343,7 +345,7 @@ function Product() {
                     کاربران فراهم کرده است.
                   </h5>
                 </Col>
-                <Col span={10} className="imgdescription">
+                <Col span={10} className="img-description">
                   <img src={picture} alt="" width="90%" />
                 </Col>
               </Row>
@@ -359,23 +361,23 @@ function Product() {
             <h1>محصولات مشابه</h1>
           </Col>
         </Row>
-        <Row className="silmilarproduct">
-          <Col span={4}>
+        <Row className="silmilar-product">
+          <Col lg={4} xs={12} style={{ padding: '10px' }}>
             <Link to="/shopping/product">
               <Cards img={saat1} productname="محصول1" price="100,000" off="80,000" />
             </Link>
           </Col>
-          <Col span={4}>
+          <Col lg={4} xs={12} style={{ padding: '10px' }}>
             <Link to="/shopping/product">
               <Cards img={saat2} productname="محصول2" price="200,000" off="140,000" />
             </Link>
           </Col>
-          <Col span={4}>
+          <Col lg={4} xs={12} style={{ padding: '10px' }}>
             <Link to="/shopping/product">
               <Cards img={saat3} productname="محصول3" price="300,000" off="250,000" />
             </Link>
           </Col>
-          <Col span={4}>
+          <Col lg={4} xs={12} style={{ padding: '10px' }}>
             <Link to="/shopping/product">
               <Cards img={saat4} productname="محصول4" price="400,000" off="399,000" />
             </Link>

@@ -1,0 +1,21 @@
+.mainpage{
+  .slide {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .product-usp {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+  
+    .product-usp-item {
+      text-align: center;
+      h4 {
+        color: #17a2b8;
+      }
+    }
+  }
+  
+}
+

@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 import { Row, Col } from 'antd';
 import imgfooter from '../assets/Group2-2.png';
 import pjson from '../../package.json';
-import './footer.css';
+import './footer.scss';
 
 function Footer() {
   return (
     <footer className="footer">
-      <Row className="footercontent">
-        <Col>
-          <img src={imgfooter} alt="" style={{ width: '80%', marginTop: '10px' }} />
+      <Row className="footer-content">
+        <Col lg={3} xs={14} style={{ textAlign: 'center' }}>
+          <img src={imgfooter} alt="" style={{ marginTop: '10px' }} />
           <h3 style={{ color: 'white' }}>نام فروشگاه</h3>
         </Col>
-        <Col>
+        <Col lg={4} xs={12}>
           <ul className="title">
             <Link to="/">
               <li>
@@ -37,7 +37,7 @@ function Footer() {
             </Link>
           </ul>
         </Col>
-        <Col>
+        <Col lg={4} xs={12}>
           <ul className="title">
             <Link to="/">
               <li>
@@ -61,7 +61,7 @@ function Footer() {
             </Link>
           </ul>
         </Col>
-        <Col>
+        <Col lg={4} xs={12}>
           <ul className="title">
             <Link to="/">
               <li>
@@ -85,7 +85,7 @@ function Footer() {
             </Link>
           </ul>
         </Col>
-        <Col>
+        <Col lg={4} xs={12}>
           <ul className="title">
             <Link to="/">
               <li>

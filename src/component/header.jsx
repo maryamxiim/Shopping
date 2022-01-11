@@ -3,15 +3,14 @@ import { Link } from 'react-router-dom';
 import { Row, Col, Input, Button, Layout, Menu, Dropdown } from 'antd';
 import { UserOutlined, ShopOutlined, ShoppingOutlined, DownOutlined } from '@ant-design/icons';
 import logo from '../assets/Group2.png';
-import './header.css';
+import './header.scss';
 
 const { SubMenu } = Menu;
 const { Search } = Input;
 const onSearch = (value) => console.log(value);
 const { Header } = Layout;
-
 const menu = (
-  <Menu className="menuitem">
+  <Menu className="menuitem" style={{ float: 'right' }}>
     <Menu.ItemGroup title="محصولات دسته بندی کالا دیجیتال:" />
     <SubMenu title="تلفن همراه" className="submenu">
       <Menu.Item className="submenu-item">
@@ -148,29 +147,34 @@ const menu = (
 
 function Headers() {
   return (
-    <div className="App">
+    <div className="headers">
       <Row className="header">
-        <Col span={3} className="logo">
-          <img src={logo} alt="" />
-          <h3>نام فروشگاه</h3>
+        <Col log={4} className="logo">
+          <Row>
+            <Col>
+              {' '}
+              <img src={logo} alt="" />
+            </Col>
+            <Col style={{ display: 'flex', alignItems: 'end' }}>
+              <h3>نام فروشگاه</h3>
+            </Col>
+          </Row>
         </Col>
-        <Col span={6}>
+        <Col lg={7} xs={14}>
           <Search
             placeholder="جستجو در میان محصولات"
             onSearch={onSearch}
-            style={{ width: 400, direction: 'ltr', textAlign: 'right' }}
+            style={{ direction: 'ltr', textAlign: 'right' }}
           />
         </Col>
-        <Col span={9} className="topleftheader">
-          <Button className="leftheader" type="text" icon={<ShopOutlined />}>
+        <Col lg={9} xs={24} className="top-left-header">
+          <Button className="left-header" type="text" icon={<ShopOutlined />}>
             &nbsp; ثبت نام فروشندگان
           </Button>
-          |
-          <Button className="leftheader" type="text" icon={<ShoppingOutlined />}>
+          <Button className="left-header" type="text" icon={<ShoppingOutlined />}>
             &nbsp; زنبیل
           </Button>
-          |
-          <Button className="leftheader" type="text" icon={<UserOutlined />}>
+          <Button className="left-header" type="text" icon={<UserOutlined />}>
             &nbsp; حساب کاربری
           </Button>
         </Col>

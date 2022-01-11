@@ -1,9 +1,9 @@
 import React from 'react';
-import './cardheading.css';
+import './cardheading.scss';
 
 function CardHeading({ header, title, content }) {
   return (
-    <div className="cardHeading">
+    <div className="card-heading">
       <h4>{header}</h4>
       <h2>
         <b>{title}</b>
