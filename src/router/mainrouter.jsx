@@ -9,7 +9,7 @@ import { Mainpage, ProductsList, Product } from '../pages';
 const mainRouter = () => (
   <Router>
     <Routes>
-      <Route path="/shopping" exact element={<Mainpage />} />
+      <Route path="/" exact element={<Mainpage />} />
       <Route path="/shopping/productslist" exact element={<ProductsList />} />
       <Route path="/shopping/product" exact element={<Product />} />
     </Routes>

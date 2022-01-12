@@ -9,7 +9,7 @@ function Footer() {
   return (
     <footer className="footer">
       <Row className="footer-content">
-        <Col lg={3} xs={14} style={{ textAlign: 'center' }}>
+        <Col lg={4} xs={14} style={{ textAlign: 'center' }}>
           <img src={imgfooter} alt="" style={{ marginTop: '10px' }} />
           <h3 style={{ color: 'white' }}>نام فروشگاه</h3>
         </Col>

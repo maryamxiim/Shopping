@@ -30,7 +30,7 @@ function Mainpage() {
       <Headers />
       <Row style={{ padding: '20px' }} className="slide">
         <Col lg={15} xs={24}>
-          <Link to="/shopping">
+          <Link to="/">
             <img
               src={slide22}
               alt=""
@@ -39,11 +39,11 @@ function Mainpage() {
           </Link>
         </Col>
         <Col lg={7} xs={24}>
-          <Link to="/shopping">
+          <Link to="/">
             <img src={left1} alt="" style={{ maxWidth: '100%', borderRadius: '16px' }} />
           </Link>
 
-          <Link to="/shopping">
+          <Link to="/">
             <img
               src={left2}
               alt=""

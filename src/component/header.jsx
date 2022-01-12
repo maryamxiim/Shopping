@@ -151,15 +151,16 @@ function Headers() {
       <Row className="header">
         <Col lg={4} className="logo">
           <Row>
-            <Link to="/shopping">
-              <Col>
-                {' '}
+            <Link to="/shopping" />
+
+            <Col>
+              <Link to="/">
                 <img src={logo} alt="" />
-              </Col>
-              <Col style={{ display: 'flex', alignItems: 'end' }}>
-                <h3>نام فروشگاه</h3>
-              </Col>
-            </Link>
+              </Link>
+            </Col>
+            <Col style={{ display: 'flex', alignItems: 'end' }}>
+              <h3>نام فروشگاه</h3>
+            </Col>
           </Row>
         </Col>
         <Col lg={7} xs={14}>

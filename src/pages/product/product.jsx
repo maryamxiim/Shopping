@@ -58,7 +58,7 @@ function Product() {
       <Headers />
       <Row className="breadcrumb">
         <Breadcrumb>
-          <Link to="/shopping">
+          <Link to="/">
             <Breadcrumb.Item>کالای دیجیتال</Breadcrumb.Item>
           </Link>
           <Link to="/shopping/productslist">
