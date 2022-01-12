@@ -26,7 +26,6 @@ import flag from '../../assets/flag.png';
 import message from '../../assets/message.png';
 import bag from '../../assets/bag.png';
 import picture from '../../assets/Rectangle39.png';
-import Rectangle27 from '../../assets/Rectangle27.png';
 import Cards from '../../component/card';
 import saat1 from '../../assets/saat1.jpg';
 import saat2 from '../../assets/saat2.jpg';
@@ -73,16 +72,16 @@ function Product() {
         <Col lg={7} xs={24}>
           <Carousel afterChange={onChange}>
             <div>
-              <img width="100%" src={slider} alt="" />
+              <img src={slider} alt="" className="slider" />
             </div>
             <div>
-              <img width="100%" src={slider} alt="" />
+              <img src={slider} alt="" className="slider" />
             </div>
             <div>
-              <img width="100%" src={slider} alt="" />
+              <img src={slider} alt="" className="slider" />
             </div>
             <div>
-              <img width="100%" src={slider} alt="" />
+              <img src={slider} alt="" className="slider" />
             </div>
           </Carousel>
         </Col>
@@ -327,8 +326,8 @@ function Product() {
                     کاربران فراهم کرده است.
                   </h5>
                 </Col>
-                <Col lg={10} xs={24} className="img-description">
-                  <img src={slider} alt="" width="90%" />
+                <Col lg={10} xs={24} md={16} className="img-description">
+                  <img src={slider} style={{ maxWidth: '100%' }} alt="" />
                 </Col>
               </Row>
             </TabPane>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'antd';
 import { Link } from 'react-router-dom';
-// import Rectangle27 from '../assets/Rectangle27.png';
 import CardHeading from './cardheading';
 import Cards from './card';
 import './produtsrow.scss';
@@ -14,9 +13,7 @@ function Productsrow({ header, card1, card2, card3, card4 }) {
           <Link to="/shopping/products-list">
             <CardHeading
               header={header.header}
-              // title="پرفروش ترین کفش های ورزشی"
               title={header.title}
-              // content="اورم ایپسوم متن ساختگی برای استفاده طراحان است"
               content={header.content}
               back1={header.background}
               color={header.color}

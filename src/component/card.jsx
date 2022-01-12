@@ -7,13 +7,7 @@ function Cards({ img, productname, price, off }) {
       <Card
         hoverable
         style={{ width: '100%' }}
-        cover={
-          <img
-            alt="example"
-            src={img}
-            style={{ padding: '10px', width: '230px', height: '230px' }}
-          />
-        }>
+        cover={<img alt="example" src={img} style={{ padding: '10px' }} />}>
         <h3> {productname}</h3>
 
         <s style={{ textAlign: 'center', color: 'red', float: 'left' }}>{price} تومان</s>

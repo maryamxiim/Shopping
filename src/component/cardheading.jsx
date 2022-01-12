@@ -1,6 +1,5 @@
 import React from 'react';
 import './cardheading.scss';
-// import back1 from '../assets/exhead2.png';
 
 function CardHeading({ header, title, content, back1, color }) {
   return (
