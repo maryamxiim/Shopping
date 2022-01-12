@@ -59,8 +59,13 @@ function Product() {
       <Headers />
       <Row className="breadcrumb">
         <Breadcrumb>
-          <Breadcrumb.Item>کالای دیجیتال</Breadcrumb.Item>
-          <Breadcrumb.Item>تلفن همراه</Breadcrumb.Item>
+          <Link to="/shopping">
+            <Breadcrumb.Item>کالای دیجیتال</Breadcrumb.Item>
+          </Link>
+          <Link to="/shopping/productslist">
+            <Breadcrumb.Item>تلفن همراه</Breadcrumb.Item>
+          </Link>
+
           <Breadcrumb.Item>سامسونگ</Breadcrumb.Item>
         </Breadcrumb>
       </Row>

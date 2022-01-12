@@ -1,8 +1,9 @@
 import 'antd/dist/antd.css';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Row, Col } from 'antd';
-import picture2 from '../../assets/Rectangle19.png';
-import picture3 from '../../assets/Rectangle20.png';
+// import picture2 from '../../assets/Rectangle19.png';
+// import picture3 from '../../assets/Rectangle20.png';
 import icon24 from '../../assets/icon24.png';
 import iconhaml from '../../assets/iconhaml.png';
 import iconpay from '../../assets/iconpay.png';
@@ -13,7 +14,17 @@ import left2 from '../../assets/left2.jpg';
 import Headers from '../../component/header';
 import Footer from '../../component/footer';
 import Productsrow from '../../component/produtsrow';
-import Productsrow2 from '../../component/produtsrow2';
+// import Productsrow2 from '../../component/produtsrow2';
+import shoe1 from '../../assets/shoe1.jpg';
+import shoe2 from '../../assets/shoe2.jpg';
+import shoe3 from '../../assets/shoe3.jpg';
+import shoe4 from '../../assets/shoe4.jpg';
+import ex1 from '../../assets/vaz1.jpg';
+import ex2 from '../../assets/vaz2.jpg';
+import ex3 from '../../assets/vaz3.jpg';
+import ex4 from '../../assets/vaz4.jpg';
+import bac1 from '../../assets/exhead2.png';
+import bac2 from '../../assets/exhead.png';
 import './mainpage.scss';
 
 function Mainpage() {
@@ -22,20 +33,26 @@ function Mainpage() {
       <Headers />
       <Row style={{ padding: '20px' }} className="slide">
         <Col lg={15} xs={24}>
-          <img
-            src={slide22}
-            alt=""
-            style={{ maxWidth: '100%', borderRadius: '16px', marginBottom: '25px' }}
-          />
+          <Link to="/shopping">
+            <img
+              src={slide22}
+              alt=""
+              style={{ maxWidth: '100%', borderRadius: '16px', marginBottom: '25px' }}
+            />
+          </Link>
         </Col>
         <Col lg={7} xs={24}>
-          <img src={left1} alt="" style={{ maxWidth: '100%', borderRadius: '16px' }} />
+          <Link to="/shopping">
+            <img src={left1} alt="" style={{ maxWidth: '100%', borderRadius: '16px' }} />
+          </Link>
 
-          <img
-            src={left2}
-            alt=""
-            style={{ maxWidth: '100%', marginTop: '25px', borderRadius: '16px' }}
-          />
+          <Link to="/shopping">
+            <img
+              src={left2}
+              alt=""
+              style={{ maxWidth: '100%', marginTop: '25px', borderRadius: '16px' }}
+            />
+          </Link>
         </Col>
       </Row>
       <Row className="product-usp">
@@ -71,10 +88,33 @@ function Mainpage() {
       {/* <Row></Row> */}
 
       <Row>
-        <Productsrow header="sss" products={[{}]} />
+        <Productsrow
+          header={{
+            header: 'لوازم ورزشی',
+            title: 'پرفروش ترین کفش های ورزشی',
+            content: 'اورم ایپسوم متن ساختگی برای استفاده طراحان است',
+            background: bac2,
+            color: '#D6432F'
+          }}
+          card1={{ img: shoe1, name: 'محصول 1', price: '20,000', off: '20,000' }}
+          card2={{ img: shoe2, name: 'محصول 2', price: '20,000', off: '20,000' }}
+          card3={{ img: shoe3, name: 'محصول 3', price: '20,000', off: '20,000' }}
+          card4={{ img: shoe4, name: 'محصول 4', price: '20,000', off: '20,000' }}
+        />
       </Row>
       <Row>
-        <Productsrow2 />
+        <Productsrow
+          header={{
+            title: 'بازدیدهای اخیر شما',
+            content: 'اورم ایپسوم متن ساختگی برای استفاده طراحان است',
+            background: bac1,
+            color: 'white'
+          }}
+          card1={{ img: ex1, name: 'محصول 1', price: '20,000', off: '20,000' }}
+          card2={{ img: ex2, name: 'محصول 2', price: '20,000', off: '20,000' }}
+          card3={{ img: ex3, name: 'محصول 3', price: '20,000', off: '20,000' }}
+          card4={{ img: ex4, name: 'محصول 4', price: '20,000', off: '20,000' }}
+        />
       </Row>
 
       <Footer />

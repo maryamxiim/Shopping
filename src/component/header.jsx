@@ -10,11 +10,11 @@ const { Search } = Input;
 const onSearch = (value) => console.log(value);
 const { Header } = Layout;
 const menu = (
-  <Menu className="menuitem" style={{ float: 'right' }}>
+  <Menu className="menuitem" style={{ float: 'right', textAlign: 'right' }}>
     <Menu.ItemGroup title="محصولات دسته بندی کالا دیجیتال:" />
     <SubMenu title="تلفن همراه" className="submenu">
       <Menu.Item className="submenu-item">
-        سامسونگ
+        <span> سامسونگ</span>
         <span>(Samsung)</span>
       </Menu.Item>
       <Menu.Item className="submenu-item">
@@ -149,15 +149,17 @@ function Headers() {
   return (
     <div className="headers">
       <Row className="header">
-        <Col log={4} className="logo">
+        <Col lg={4} className="logo">
           <Row>
-            <Col>
-              {' '}
-              <img src={logo} alt="" />
-            </Col>
-            <Col style={{ display: 'flex', alignItems: 'end' }}>
-              <h3>نام فروشگاه</h3>
-            </Col>
+            <Link to="/shopping">
+              <Col>
+                {' '}
+                <img src={logo} alt="" />
+              </Col>
+              <Col style={{ display: 'flex', alignItems: 'end' }}>
+                <h3>نام فروشگاه</h3>
+              </Col>
+            </Link>
           </Row>
         </Col>
         <Col lg={7} xs={14}>
@@ -171,9 +173,11 @@ function Headers() {
           <Button className="left-header" type="text" icon={<ShopOutlined />}>
             &nbsp; ثبت نام فروشندگان
           </Button>
+          |
           <Button className="left-header" type="text" icon={<ShoppingOutlined />}>
             &nbsp; زنبیل
           </Button>
+          |
           <Button className="left-header" type="text" icon={<UserOutlined />}>
             &nbsp; حساب کاربری
           </Button>
