@@ -25,6 +25,9 @@ import bac2 from '../../assets/exhead.png';
 import './mainpage.scss';
 
 function Mainpage() {
+  // const nf = new Intl.NumberFormat();
+  // nf.format(card1.off);
+  // console.log(card1);
   return (
     <div className="mainpage">
       <Headers />
@@ -93,10 +96,10 @@ function Mainpage() {
             background: bac2,
             color: '#D6432F'
           }}
-          card1={{ img: shoe1, name: 'محصول 1', price: '20,000', off: '20,000' }}
-          card2={{ img: shoe2, name: 'محصول 2', price: '20,000', off: '20,000' }}
-          card3={{ img: shoe3, name: 'محصول 3', price: '20,000', off: '20,000' }}
-          card4={{ img: shoe4, name: 'محصول 4', price: '20,000', off: '20,000' }}
+          card1={{ img: shoe1, name: 'محصول 1', price: '20000', off: '20000' }}
+          card2={{ img: shoe2, name: 'محصول 2', price: '20000', off: '20000' }}
+          card3={{ img: shoe3, name: 'محصول 3', price: '20000', off: '20000' }}
+          card4={{ img: shoe4, name: 'محصول 4', price: '20000', off: '20000' }}
         />
       </Row>
       <Row>
@@ -107,10 +110,11 @@ function Mainpage() {
             background: bac1,
             color: 'white'
           }}
-          card1={{ img: ex1, name: 'محصول 1', price: '20,000', off: '20,000' }}
-          card2={{ img: ex2, name: 'محصول 2', price: '20,000', off: '20,000' }}
-          card3={{ img: ex3, name: 'محصول 3', price: '20,000', off: '20,000' }}
-          card4={{ img: ex4, name: 'محصول 4', price: '20,000', off: '20,000' }}
+          // carrds={[]}
+          card1={{ img: ex1, name: 'محصول 1', price: '50000', off: '20000' }}
+          card2={{ img: ex2, name: 'محصول 2', price: '20000', off: '20000' }}
+          card3={{ img: ex3, name: 'محصول 3', price: '20000', off: '20000' }}
+          card4={{ img: ex4, name: 'محصول 4', price: '20000', off: '20000' }}
         />
       </Row>
 

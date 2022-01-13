@@ -19,13 +19,18 @@
    
 
  .top-left-header{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
    
   text-align: center;
       .left-header {
         direction: rtl;
         
         color: #8c8c8c;
-        margin: 10px 3px;
+        margin: 10px 0px;
+        padding: 5px 5px;
+      
 
         &:focus{
           background-color: #17a2b8;

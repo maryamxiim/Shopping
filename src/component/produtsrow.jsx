@@ -5,6 +5,7 @@ import CardHeading from './cardheading';
 import Cards from './card';
 import './produtsrow.scss';
 
+// const cards = [];
 function Productsrow({ header, card1, card2, card3, card4 }) {
   return (
     <div className="products-row">
@@ -20,7 +21,7 @@ function Productsrow({ header, card1, card2, card3, card4 }) {
             />
           </Link>
         </Col>
-
+        {/* card1.map */}
         <Col lg={4} xs={12} style={{ padding: '10px' }}>
           <Link to="/shopping/productslist">
             <Cards img={card1.img} productname={card1.name} price={card1.price} off={card1.off} />

@@ -127,66 +127,66 @@ function ProductsList() {
           <Row className="result-product">
             <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
-                <Cards img={img1} productname="محصول 1" price="200,000" off="20,000" />
+                <Cards img={img1} productname="محصول 1" price="10000" off="20000" />
               </Link>
             </Col>
             <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
-                <Cards img={image2} productname="محصول 2" price="200,000" off="20,000" />
+                <Cards img={image2} productname="محصول 2" price="200000" off="20000" />
               </Link>
             </Col>
             <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
-                <Cards img={image3} productname="محصول 3" price="200,000" off="20,000" />
+                <Cards img={image3} productname="محصول 3" price="200000" off="20000" />
               </Link>
             </Col>
             <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
-                <Cards img={image4} productname="محصول 4" price="200,000" off="20,000" />
-              </Link>
-            </Col>
-          </Row>
-          <Row className="result-product">
-            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
-              <Link to="/shopping/product">
-                <Cards img={image5} productname="محصول 5" price="200,000" off="20,000" />
-              </Link>
-            </Col>
-            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
-              <Link to="/shopping/product">
-                <Cards img={image6} productname="محصول 6" price="200,000" off="20,000" />
-              </Link>
-            </Col>
-            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
-              <Link to="/shopping/product">
-                <Cards img={image7} productname="محصول 7" price="200,000" off="20,000" />
-              </Link>
-            </Col>
-            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
-              <Link to="/shopping/product">
-                <Cards img={image8} productname="محصول 8" price="200,000" off="20,000" />
+                <Cards img={image4} productname="محصول 4" price="200000" off="20000" />
               </Link>
             </Col>
           </Row>
           <Row className="result-product">
             <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
-                <Cards img={image9} productname="محصول 9" price="200,000" off="20,000" />
+                <Cards img={image5} productname="محصول 5" price="200000" off="20000" />
               </Link>
             </Col>
             <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
-                <Cards img={image10} productname="محصول 10" price="200,000" off="20,000" />
+                <Cards img={image6} productname="محصول 6" price="200000" off="20000" />
               </Link>
             </Col>
             <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
-                <Cards img={image11} productname="محصول 11" price="200,000" off="20,000" />
+                <Cards img={image7} productname="محصول 7" price="200000" off="20000" />
               </Link>
             </Col>
             <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
-                <Cards img={image12} productname="محصول 12" price="200,000" off="20,000" />
+                <Cards img={image8} productname="محصول 8" price="200000" off="20000" />
+              </Link>
+            </Col>
+          </Row>
+          <Row className="result-product">
+            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
+              <Link to="/shopping/product">
+                <Cards img={image9} productname="محصول 9" price="200000" off="20000" />
+              </Link>
+            </Col>
+            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
+              <Link to="/shopping/product">
+                <Cards img={image10} productname="محصول 10" price="200000" off="20000" />
+              </Link>
+            </Col>
+            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
+              <Link to="/shopping/product">
+                <Cards img={image11} productname="محصول 11" price="200000" off="20000" />
+              </Link>
+            </Col>
+            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
+              <Link to="/shopping/product">
+                <Cards img={image12} productname="محصول 12" price="200000" off="20000" />
               </Link>
             </Col>
           </Row>

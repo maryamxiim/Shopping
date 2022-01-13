@@ -170,18 +170,24 @@ function Headers() {
             style={{ direction: 'ltr', textAlign: 'right' }}
           />
         </Col>
-        <Col lg={9} xs={24} className="top-left-header">
-          <Button className="left-header" type="text" icon={<ShopOutlined />}>
-            &nbsp; ثبت نام فروشندگان
-          </Button>
+        <Col lg={7} xs={24} className="top-left-header">
+          <Link to="/">
+            <Button className="left-header" type="text" icon={<ShopOutlined />}>
+              &nbsp; ثبت نام فروشندگان
+            </Button>
+          </Link>
           |
-          <Button className="left-header" type="text" icon={<ShoppingOutlined />}>
-            &nbsp; زنبیل
-          </Button>
+          <Link to="/">
+            <Button className="left-header" type="text" icon={<ShoppingOutlined />}>
+              &nbsp; زنبیل
+            </Button>
+          </Link>
           |
-          <Button className="left-header" type="text" icon={<UserOutlined />}>
-            &nbsp; حساب کاربری
-          </Button>
+          <Link to="/">
+            <Button className="left-header" type="text" icon={<UserOutlined />}>
+              &nbsp; حساب کاربری
+            </Button>
+          </Link>
         </Col>
       </Row>
       <Layout className="layout">
@@ -189,7 +195,7 @@ function Headers() {
           <Menu className="menu" mode="horizontal" defaultSelectedKeys={['1']}>
             <Menu.Item key="1">
               <Dropdown overlay={menu} className="dropdown">
-                <Link to="/" className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
+                <Link to="/s" className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
                   کالای دیجیتال
                   <DownOutlined />
                 </Link>

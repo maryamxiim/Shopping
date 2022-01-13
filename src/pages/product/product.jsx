@@ -368,22 +368,22 @@ function Product() {
         <Row className="silmilar-product">
           <Col lg={4} xs={12} style={{ padding: '10px' }}>
             <Link to="/shopping/product">
-              <Cards img={saat1} productname="محصول1" price="100,000" off="80,000" />
+              <Cards img={saat1} productname="محصول1" price="100000" off="80000" />
             </Link>
           </Col>
           <Col lg={4} xs={12} style={{ padding: '10px' }}>
             <Link to="/shopping/product">
-              <Cards img={saat2} productname="محصول2" price="200,000" off="140,000" />
+              <Cards img={saat2} productname="محصول2" price="200000" off="140000" />
             </Link>
           </Col>
           <Col lg={4} xs={12} style={{ padding: '10px' }}>
             <Link to="/shopping/product">
-              <Cards img={saat3} productname="محصول3" price="300,000" off="250,000" />
+              <Cards img={saat3} productname="محصول3" price="300000" off="250000" />
             </Link>
           </Col>
           <Col lg={4} xs={12} style={{ padding: '10px' }}>
             <Link to="/shopping/product">
-              <Cards img={saat4} productname="محصول4" price="400,000" off="399,000" />
+              <Cards img={saat4} productname="محصول4" price="400000" off="399000" />
             </Link>
           </Col>
         </Row>
