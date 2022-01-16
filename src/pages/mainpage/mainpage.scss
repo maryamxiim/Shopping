@@ -2,6 +2,23 @@
   .slide {
     display: flex;
     justify-content: space-around;
+    padding: 20px;
+
+    .slide-right {
+      max-width: 100%;
+      border-radius: 16px;
+      margin-bottom: 25px;
+     }
+
+     .slide-left-top {
+       max-width: 100%;
+       border-radius: 16px;
+     }
+     .slide-left-bottom{
+max-width: 100%;
+border-radius: 16px;
+margin-top: 25px;
+     }
   }
 
   .product-usp {

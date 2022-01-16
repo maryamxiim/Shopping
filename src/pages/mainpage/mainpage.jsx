@@ -31,32 +31,39 @@ function Mainpage() {
   return (
     <div className="mainpage">
       <Headers />
-      <Row style={{ padding: '20px' }} className="slide">
+      <Row className="slide">
         <Col lg={15} xs={24}>
           <Link to="/">
             <img
+              className="slide-right"
               src={slide22}
               alt=""
-              style={{ maxWidth: '100%', borderRadius: '16px', marginBottom: '25px' }}
+              // style={{ maxWidth: '100%', borderRadius: '16px', marginBottom: '25px' }}
             />
           </Link>
         </Col>
         <Col lg={7} xs={24}>
           <Link to="/">
-            <img src={left1} alt="" style={{ maxWidth: '100%', borderRadius: '16px' }} />
+            <img
+              src={left1}
+              alt=""
+              className="slide-left-top"
+              // style={{ maxWidth: '100%', borderRadius: '16px' }}
+            />
           </Link>
 
           <Link to="/">
             <img
               src={left2}
               alt=""
-              style={{ maxWidth: '100%', marginTop: '25px', borderRadius: '16px' }}
+              className="slide-left-bottom"
+              // style={{ maxWidth: '100%', marginTop: '25px', borderRadius: '16px' }}
             />
           </Link>
         </Col>
       </Row>
       <Row className="product-usp">
-        <Col xl={3} xs={12} style={{ marginBottom: '5px' }}>
+        <Col xl={3} xs={12}>
           <div className="product-usp-item">
             <img src={icon24} alt="" />
             <h4>پشتیبانی 24 ساعته</h4>
@@ -70,7 +77,7 @@ function Mainpage() {
             <h5>تا دستان شما</h5>
           </div>
         </Col>
-        <Col xl={3} xs={12} style={{ marginBottom: '5px' }}>
+        <Col xl={3} xs={12}>
           <div className="product-usp-item">
             <img src={iconpay} alt="" />
             <h4>پرداخت آسان</h4>
@@ -92,11 +99,11 @@ function Mainpage() {
           header={{
             header: 'لوازم ورزشی',
             title: 'پرفروش ترین کفش های ورزشی',
-            content: 'اورم ایپسوم متن ساختگی برای استفاده طراحان است',
+            content: 'لورم ایپسوم متن ساختگی برای استفاده طراحان است',
             background: bac2,
             color: '#D6432F'
           }}
-          carrds={[
+          cards={[
             { img: shoe1, name: 'محصول 1', price: '20000', off: '20000' },
             { img: shoe2, name: 'محصول 2', price: '20000', off: '20000' },
             { img: shoe3, name: 'محصول 3', price: '20000', off: '20000' },
@@ -108,11 +115,11 @@ function Mainpage() {
         <Productsrow
           header={{
             title: 'بازدیدهای اخیر شما',
-            content: 'اورم ایپسوم متن ساختگی برای استفاده طراحان است',
+            content: 'لورم ایپسوم متن ساختگی برای استفاده طراحان است',
             background: bac1,
             color: 'white'
           }}
-          carrds={[
+          cards={[
             { img: ex1, name: 'محصول 1', price: '50000', off: '20000' },
             { img: ex2, name: 'محصول 2', price: '20000', off: '20000' },
             { img: ex3, name: 'محصول 3', price: '20000', off: '20000' },

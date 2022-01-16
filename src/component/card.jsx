@@ -16,12 +16,12 @@ function Cards({ img, productname, price, off }) {
       <Card
         hoverable
         style={{ width: '100%' }}
-        cover={<img alt="example" src={img} style={{ padding: '10px' }} />}>
+        cover={<img alt="example" src={img} className="card-img" />}>
         <h3> {productname}</h3>
 
-        <s style={{ textAlign: 'center', color: 'red', float: 'left' }}>{prices} تومان</s>
+        <s className="prices">{prices} تومان</s>
         <br />
-        <h4 style={{ textAlign: 'left' }}>{offs} تومان</h4>
+        <h4 className="off">{offs} تومان</h4>
       </Card>
       {/* </Link> */}
     </div>

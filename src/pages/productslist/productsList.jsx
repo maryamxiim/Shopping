@@ -40,7 +40,7 @@ function ProductsList() {
             onClick={(e) => {
               console.log('click ', e);
             }}
-            style={{ width: '90%' }}
+            // style={{ width: '90%' }}
             defaultSelectedKeys={['1']}
             defaultOpenKeys={['sub1']}
             mode="inline"
@@ -62,10 +62,10 @@ function ProductsList() {
               <Menu.Item key="12">تست 12</Menu.Item>
             </SubMenu>
             <SubMenu key="sub5" title="محل فروشنده">
-              <Menu.Item key="9">تست 9</Menu.Item>
-              <Menu.Item key="10">تست 10</Menu.Item>
-              <Menu.Item key="11">تست 11</Menu.Item>
-              <Menu.Item key="12">تست 12</Menu.Item>
+              <Menu.Item key="13">تست 9</Menu.Item>
+              <Menu.Item key="14">تست 10</Menu.Item>
+              <Menu.Item key="15">تست 11</Menu.Item>
+              <Menu.Item key="16">تست 12</Menu.Item>
             </SubMenu>
           </Menu>
           <Divider style={{ width: 100 }} />
@@ -95,28 +95,28 @@ function ProductsList() {
           {/* <Productsrow />
            */}
           <Row className="result-show">
-            <Col lg={5} xs={24} md={7} className="show">
+            <Col lg={6} xs={24} md={24} className="show">
               ترتیب نمایش نتایج بر اساس:
             </Col>
-            <Col lg={3} xs={12} md={3}>
+            <Col lg={4} xs={12} md={12}>
               <Button type="text" ghost className="btn-show">
                 {' '}
                 پربازدیدترین
               </Button>
             </Col>
-            <Col lg={3} xs={12} md={3}>
+            <Col lg={4} xs={12} md={12}>
               <Button type="text" ghost className="btn-show">
                 {' '}
                 جدیدترین
               </Button>
             </Col>
-            <Col lg={4} xs={12} md={5}>
+            <Col lg={4} xs={12} md={12}>
               <Button type="text" ghost className="btn-show">
                 {' '}
                 قیمت: از کم به زیاد
               </Button>
             </Col>
-            <Col lg={4} xs={12} md={3}>
+            <Col lg={4} xs={12} md={12}>
               <Button type="text" ghost className="btn-show">
                 {' '}
                 قیمت: از زیاد به کم
@@ -124,66 +124,66 @@ function ProductsList() {
             </Col>
           </Row>
           <Row className="result-product">
-            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
+            <Col lg={6} xs={12}>
               <Link to="/shopping/product">
                 <Cards img={img1} productname="محصول 11" price="10000" off="20000" />
               </Link>
             </Col>
-            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
+            <Col lg={6} xs={12}>
               <Link to="/shopping/product">
                 <Cards img={image2} productname="محصول 2" price="200000" off="20000" />
               </Link>
             </Col>
-            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
+            <Col lg={6} xs={12}>
               <Link to="/shopping/product">
                 <Cards img={image3} productname="محصول 3" price="200000" off="20000" />
               </Link>
             </Col>
-            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
+            <Col lg={6} xs={12}>
               <Link to="/shopping/product">
                 <Cards img={image4} productname="محصول 4" price="200000" off="20000" />
               </Link>
             </Col>
           </Row>
           <Row className="result-product">
-            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
+            <Col lg={6} xs={12}>
               <Link to="/shopping/product">
                 <Cards img={image5} productname="محصول 5" price="200000" off="20000" />
               </Link>
             </Col>
-            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
+            <Col lg={6} xs={12}>
               <Link to="/shopping/product">
                 <Cards img={image6} productname="محصول 6" price="200000" off="20000" />
               </Link>
             </Col>
-            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
+            <Col lg={6} xs={12}>
               <Link to="/shopping/product">
                 <Cards img={image7} productname="محصول 7" price="200000" off="20000" />
               </Link>
             </Col>
-            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
+            <Col lg={6} xs={12}>
               <Link to="/shopping/product">
                 <Cards img={image8} productname="محصول 8" price="200000" off="20000" />
               </Link>
             </Col>
           </Row>
           <Row className="result-product">
-            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
+            <Col lg={6} xs={12}>
               <Link to="/shopping/product">
                 <Cards img={image9} productname="محصول 9" price="200000" off="20000" />
               </Link>
             </Col>
-            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
+            <Col lg={6} xs={12}>
               <Link to="/shopping/product">
                 <Cards img={image10} productname="محصول 10" price="200000" off="20000" />
               </Link>
             </Col>
-            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
+            <Col lg={6} xs={12}>
               <Link to="/shopping/product">
                 <Cards img={image11} productname="محصول 11" price="200000" off="20000" />
               </Link>
             </Col>
-            <Col lg={6} xs={12} style={{ padding: '10px ' }}>
+            <Col lg={6} xs={12}>
               <Link to="/shopping/product">
                 <Cards img={image12} productname="محصول 12" price="200000" off="20000" />
               </Link>

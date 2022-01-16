@@ -10,7 +10,7 @@ const { Search } = Input;
 const onSearch = (value) => console.log(value);
 const { Header } = Layout;
 const menu = (
-  <Menu className="menuitem" style={{ float: 'right', textAlign: 'right' }}>
+  <Menu className="menuitem">
     <Menu.ItemGroup title="محصولات دسته بندی کالا دیجیتال:" />
     <SubMenu title="تلفن همراه" className="submenu">
       <Menu.Item className="submenu-item">
@@ -150,24 +150,27 @@ function Headers() {
     <div className="headers">
       <Row className="header">
         <Col lg={4} className="logo">
-          <Row>
+          <Link to="/">
+            <img src={logo} alt="" />
+          </Link>
+          <h3>نام فروشگاه</h3>
+          {/* <Row>
             <Link to="/shopping" />
 
             <Col>
-              <Link to="/">
-                <img src={logo} alt="" />
-              </Link>
+              
             </Col>
             <Col style={{ display: 'flex', alignItems: 'end' }}>
-              <h3>نام فروشگاه</h3>
+              
             </Col>
-          </Row>
+          </Row> */}
         </Col>
         <Col lg={7} xs={14}>
           <Search
             placeholder="جستجو در میان محصولات"
             onSearch={onSearch}
-            style={{ direction: 'ltr', textAlign: 'right' }}
+            className="search"
+            // style={{ direction: 'ltr', textAlign: 'right' }}
           />
         </Col>
         <Col lg={7} xs={24} className="top-left-header">

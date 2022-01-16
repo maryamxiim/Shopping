@@ -13,7 +13,17 @@
   text-align: right;
   margin-bottom: 0px;
   padding-bottom: 10px;
-
+  
+  .footer-logo {
+    text-align: center;
+    h3 {
+      color: white;
+    }
+    img {
+      margin-top: 20px;
+    }
+  }
+  
   h3 {
     color: #17a2b8;
   }

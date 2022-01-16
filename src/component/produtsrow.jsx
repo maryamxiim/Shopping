@@ -7,9 +7,8 @@ import './produtsrow.scss';
 
 // const img = [];
 
-function Productsrow({ header, carrds, card1, card2, card3, card4, img }) {
-  const cards = ['card1', 'card2', 'card3', 'card4'];
-  console.log('cardsss', carrds);
+function Productsrow({ header, cards, card1, card2, card3, card4, img }) {
+  // console.log('cardsss', cards);
   return (
     <div className="products-row">
       <Row className="products-row-content">
@@ -27,7 +26,7 @@ function Productsrow({ header, carrds, card1, card2, card3, card4, img }) {
         {/* card1.map */}
 
         <Col lg={16} xs={6} className="cardss">
-          {carrds?.map((card) => (
+          {cards?.map((card) => (
             <Link to="/shopping/productslist">
               <Cards
                 key={card.name}

@@ -58,12 +58,15 @@ function Product() {
       <Headers />
       <Row className="breadcrumb">
         <Breadcrumb>
-          <Link to="/">
-            <Breadcrumb.Item>کالای دیجیتال</Breadcrumb.Item>
-          </Link>
-          <Link to="/shopping/productslist">
-            <Breadcrumb.Item>تلفن همراه</Breadcrumb.Item>
-          </Link>
+          <Breadcrumb.Item>
+            {' '}
+            <Link to="/">کالای دیجیتال</Link>
+          </Breadcrumb.Item>
+
+          <Breadcrumb.Item>
+            {' '}
+            <Link to="/shopping/productslist"> تلفن همراه </Link>
+          </Breadcrumb.Item>
 
           <Breadcrumb.Item>سامسونگ</Breadcrumb.Item>
         </Breadcrumb>
@@ -71,17 +74,17 @@ function Product() {
       <Row className="product-slider">
         <Col lg={7} xs={24}>
           <Carousel afterChange={onChange}>
-            <div>
-              <img src={slider} alt="" className="slider" />
+            <div className="slider">
+              <img src={slider} alt="" style={{ maxWidth: '100%' }} />
             </div>
-            <div>
-              <img src={slider} alt="" className="slider" />
+            <div className="slider">
+              <img src={slider} alt="" />
             </div>
-            <div>
-              <img src={slider} alt="" className="slider" />
+            <div className="slider">
+              <img src={slider} alt="" />
             </div>
-            <div>
-              <img src={slider} alt="" className="slider" />
+            <div className="slider">
+              <img src={slider} alt="" />
             </div>
           </Carousel>
         </Col>
@@ -104,7 +107,7 @@ function Product() {
               <h2>۵٬۱۵۰٬۰۰۰</h2>
             </Col>
           </Row>
-          <Row>
+          <Row className="lsls">
             <Col lg={3} xs={24}>
               <InputNumber
                 className="input-number"
@@ -117,7 +120,7 @@ function Product() {
             </Col>
             <Col lg={10} xs={24}>
               <Button type="primary" className="add-to-basket">
-                <img src={bag} alt="" style={{ width: '20px' }} />
+                <img src={bag} alt="" />
                 &nbsp; اضافه کردن به زنبیل
               </Button>
             </Col>
@@ -158,10 +161,11 @@ function Product() {
             <Col span={11} className="product-details-icon">
               <Link to="/">
                 <ShareAltOutlined
-                  style={{
-                    fontSize: '16px',
-                    color: 'black'
-                  }}
+                  className="icon-share"
+                  // style={{
+                  //   fontSize: '16px',
+                  //   color: 'black'
+                  // }}
                 />
               </Link>
               <h5> به اشتراک گذاری</h5>
@@ -201,14 +205,9 @@ function Product() {
         <Col lg={6} xs={24} className="details-seller">
           <Row className="detail-of-seller">
             <Col span={2}>
-              <img src={shop} alt="" style={{ width: '20px' }} />
+              <img src={shop} alt="" />
             </Col>
-            <Col
-              span={5}
-              style={{
-                textAlign: 'left',
-                marginLeft: '15px'
-              }}>
+            <Col span={5} className="information">
               <h5>فروشنده:</h5>
             </Col>
             <Col span={12}>
@@ -220,25 +219,22 @@ function Product() {
             <Button
               type="primary"
               ghost
-              style={{
-                padding: '0px 70px',
-                margin: 'auto',
-                fontSize: '13px'
-              }}>
-              <img src={message} alt="" style={{ width: '20px' }} />
+              className="conv-seller"
+              // style={{
+              //   padding: '0px 70px',
+              //   margin: 'auto',
+              //   fontSize: '13px'
+              // }}
+            >
+              <img src={message} alt="" />
               &nbsp; شروع گفتگو با فروشنده
             </Button>
           </Row>
           <Row className="detail-of-seller">
             <Col span={2}>
-              <img src={call} alt="" style={{ width: '20px' }} />
+              <img src={call} alt="" />
             </Col>
-            <Col
-              span={5}
-              style={{
-                textAlign: 'left',
-                marginLeft: '15px'
-              }}>
+            <Col span={5} className="information">
               <h5>تلفن:</h5>
             </Col>
             <Col span={12}>
@@ -247,14 +243,9 @@ function Product() {
           </Row>
           <Row className="detail-of-seller">
             <Col span={2}>
-              <img src={location} alt="" style={{ width: '20px' }} />
+              <img src={location} alt="" />
             </Col>
-            <Col
-              span={5}
-              style={{
-                textAlign: 'left',
-                marginLeft: '15px'
-              }}>
+            <Col span={5} className="information">
               <h5>موقعیت فروشنده:</h5>
             </Col>
             <Col span={12}>
@@ -263,30 +254,20 @@ function Product() {
           </Row>
           <Row className="detail-of-seller">
             <Col span={2}>
-              <img src={grantee} alt="" style={{ width: '20px' }} />
+              <img src={grantee} alt="" />
             </Col>
-            <Col
-              span={5}
-              style={{
-                textAlign: 'left',
-                marginLeft: '15px'
-              }}>
+            <Col span={5} className="information">
               <h5>نحوه ضمانت:</h5>
             </Col>
             <Col span={12}>
-              <h5>ضمانت بازگشت 7 رdوزه کالا</h5>
+              <h5>ضمانت بازگشت 7 روزه کالا</h5>
             </Col>
           </Row>
           <Row className="detail-of-seller">
             <Col span={2}>
-              <img src={shipping} alt="" style={{ width: '20px' }} />
+              <img src={shipping} alt="" />
             </Col>
-            <Col
-              span={5}
-              style={{
-                textAlign: 'left',
-                marginLeft: '15px'
-              }}>
+            <Col span={5} className="information">
               <h5>نحوه ارسال:</h5>
             </Col>
             <Col span={12}>
@@ -296,7 +277,7 @@ function Product() {
           <Link to="/">
             <Row className="detail-of-seller">
               <Col span={2}>
-                <img src={flag} alt="" style={{ width: '20px' }} />
+                <img src={flag} alt="" />
               </Col>
               <Col span={8} style={{ textAlign: 'right' }} className="reaport">
                 <h5>گزارش مشکل آگهی</h5>
@@ -327,7 +308,7 @@ function Product() {
                   </h5>
                 </Col>
                 <Col lg={10} xs={24} md={16} className="img-description">
-                  <img src={slider} style={{ maxWidth: '100%' }} alt="" />
+                  <img src={slider} alt="" />
                 </Col>
               </Row>
             </TabPane>

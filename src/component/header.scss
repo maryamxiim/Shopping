@@ -14,8 +14,17 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      h3 {
+        padding-top: 10px;
+      }
     }
 
+    .search{
+      direction: ltr;
+      text-align: right;
+
+    }
    
 
  .top-left-header{
@@ -64,10 +73,7 @@
   float: left;
 }
 
-.menuitem {
-  left: -50px;
-  top: 10px;
-}
+
     }
   }
 
@@ -75,6 +81,13 @@
 
 
 
+.menuitem {
+  left: -50px;
+  top: 10px;
+  text-align: right;
+  float: right;
+  // style={{ float: 'right', textAlign: 'right' }}
+}
 
 .ant-dropdown-menu-submenu-title .ant-dropdown-menu-submenu-expand-icon{
   transform: rotate(180deg);
