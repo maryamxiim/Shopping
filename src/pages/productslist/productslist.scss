@@ -56,6 +56,7 @@
 }
 
 .btn-show {
+  margin: 3px;
   &:focus{
   background-color: #17a2b8;
   color: white;}
@@ -100,9 +101,21 @@
   .ant-menu-inline .ant-menu-submenu-title {
     padding-right: 0px;
   }
+
+  // .ant-menu-submenu-open.ant-menu-submenu-inline > .ant-menu-submenu-title > .ant-menu-submenu-arrow {
+  //   width: 30%;
+  // }
+  // .ant-menu-submenu-open.ant-menu-submenu-inline > .ant-menu-submenu-title > .ant-menu-submenu-arrow {
+  //   width: 30%;
+  // }
   
+  .ant-menu-submenu-open.ant-menu-submenu-inline > .ant-menu-submenu-title > .ant-menu-submenu-arrow {
+    width: 35%;
+  }
   
-  
+  .ant-menu-inline.ant-menu-root .ant-menu-submenu-title > * {
+    width: 35%;
+  }
 }
 
 

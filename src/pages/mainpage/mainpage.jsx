@@ -96,10 +96,12 @@ function Mainpage() {
             background: bac2,
             color: '#D6432F'
           }}
-          card1={{ img: shoe1, name: 'محصول 1', price: '20000', off: '20000' }}
-          card2={{ img: shoe2, name: 'محصول 2', price: '20000', off: '20000' }}
-          card3={{ img: shoe3, name: 'محصول 3', price: '20000', off: '20000' }}
-          card4={{ img: shoe4, name: 'محصول 4', price: '20000', off: '20000' }}
+          carrds={[
+            { img: shoe1, name: 'محصول 1', price: '20000', off: '20000' },
+            { img: shoe2, name: 'محصول 2', price: '20000', off: '20000' },
+            { img: shoe3, name: 'محصول 3', price: '20000', off: '20000' },
+            { img: shoe4, name: 'محصول 4', price: '20000', off: '20000' }
+          ]}
         />
       </Row>
       <Row>
@@ -110,11 +112,12 @@ function Mainpage() {
             background: bac1,
             color: 'white'
           }}
-          // carrds={[]}
-          card1={{ img: ex1, name: 'محصول 1', price: '50000', off: '20000' }}
-          card2={{ img: ex2, name: 'محصول 2', price: '20000', off: '20000' }}
-          card3={{ img: ex3, name: 'محصول 3', price: '20000', off: '20000' }}
-          card4={{ img: ex4, name: 'محصول 4', price: '20000', off: '20000' }}
+          carrds={[
+            { img: ex1, name: 'محصول 1', price: '50000', off: '20000' },
+            { img: ex2, name: 'محصول 2', price: '20000', off: '20000' },
+            { img: ex3, name: 'محصول 3', price: '20000', off: '20000' },
+            { img: ex4, name: 'محصول 4', price: '20000', off: '20000' }
+          ]}
         />
       </Row>
 

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Headers from '../../component/header';
 import Footer from '../../component/footer';
 import Cards from '../../component/card';
-import Rectangle27 from '../../assets/Rectangle27.png';
+// import Rectangle27 from '../../assets/Rectangle27.png';
 import img1 from '../../assets/image.png';
 import image2 from '../../assets/image2.jpg';
 import image3 from '../../assets/image3.jpg';
@@ -35,12 +35,12 @@ function ProductsList() {
         </Col>
       </Row>
       <Row className="side">
-        <Col className="menus" lg={5} xs={22}>
+        <Col className="menus" lg={5} xs={22} md={12}>
           <Menu
             onClick={(e) => {
               console.log('click ', e);
             }}
-            style={{ width: 256 }}
+            style={{ width: '90%' }}
             defaultSelectedKeys={['1']}
             defaultOpenKeys={['sub1']}
             mode="inline"
@@ -69,7 +69,6 @@ function ProductsList() {
             </SubMenu>
           </Menu>
           <Divider style={{ width: 100 }} />
-
           <div className="radio-item">
             <div>فقط نمایش محصولات موجود</div>
             <div>
@@ -92,32 +91,32 @@ function ProductsList() {
             </div>
           </div>
         </Col>
-        <Col lg={17} xs={24}>
+        <Col lg={17} xs={24} md={12}>
           {/* <Productsrow />
            */}
           <Row className="result-show">
-            <Col lg={5} xs={24} className="show">
+            <Col lg={5} xs={24} md={7} className="show">
               ترتیب نمایش نتایج بر اساس:
             </Col>
-            <Col lg={3} xs={24}>
+            <Col lg={3} xs={12} md={3}>
               <Button type="text" ghost className="btn-show">
                 {' '}
                 پربازدیدترین
               </Button>
             </Col>
-            <Col lg={3} xs={24}>
+            <Col lg={3} xs={12} md={3}>
               <Button type="text" ghost className="btn-show">
                 {' '}
                 جدیدترین
               </Button>
             </Col>
-            <Col lg={4} xs={24}>
+            <Col lg={4} xs={12} md={5}>
               <Button type="text" ghost className="btn-show">
                 {' '}
                 قیمت: از کم به زیاد
               </Button>
             </Col>
-            <Col lg={4} xs={24}>
+            <Col lg={4} xs={12} md={3}>
               <Button type="text" ghost className="btn-show">
                 {' '}
                 قیمت: از زیاد به کم
@@ -127,7 +126,7 @@ function ProductsList() {
           <Row className="result-product">
             <Col lg={6} xs={12} style={{ padding: '10px ' }}>
               <Link to="/shopping/product">
-                <Cards img={img1} productname="محصول 1" price="10000" off="20000" />
+                <Cards img={img1} productname="محصول 11" price="10000" off="20000" />
               </Link>
             </Col>
             <Col lg={6} xs={12} style={{ padding: '10px ' }}>
