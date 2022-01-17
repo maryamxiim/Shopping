@@ -1,9 +1,10 @@
 import React from 'react';
 import './cardheading.scss';
 
-function CardHeading({ header, title, content, back1, color }) {
+function CardHeading({ data }) {
+  const { header, title, content, background, color } = data;
   return (
-    <div className="card-heading" style={{ backgroundImage: `URL(${back1})` }}>
+    <div className="card-heading" style={{ backgroundImage: `URL(${background})` }}>
       <h4 style={{ color }}>{header}</h4>
       <h2 style={{ color }}>
         <b>{title}</b>

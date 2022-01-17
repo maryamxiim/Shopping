@@ -15,28 +15,31 @@ function Productsrow({ header, cards, card1, card2, card3, card4, img }) {
         <Col lg={6} xs={24}>
           {/* <Link to="/shopping/products-list"> */}
           <CardHeading
-            header={header.header}
-            title={header.title}
-            content={header.content}
-            back1={header.background}
-            color={header.color}
+            data={header}
+            // header={header.header}
+            // title={header.title}
+            // content={header.content}
+            // back1={header.background}
+            // color={header.color}
           />
           {/* </Link> */}
         </Col>
         {/* card1.map */}
 
-        <Col lg={16} xs={6} className="cardss">
+        <Col lg={16} xs={24} className="cardss">
           {cards?.map((card) => (
-            <Link to="/shopping/productslist">
-              <Cards
-                key={card.name}
-                img={card.img}
-                productname={card.name}
-                price={card.price}
-                off={card.off}
-              />
-            </Link>
-          ))}{' '}
+            <Col xs={12} sm={6} className="cardss">
+              <Link to="/shopping/productslist">
+                <Cards
+                  key={card.name}
+                  img={card.img}
+                  productname={card.name}
+                  price={card.price}
+                  off={card.off}
+                />
+              </Link>
+            </Col>
+          ))}
         </Col>
 
         {/* <Link to="/shopping/productslist">

@@ -7,16 +7,18 @@ import ScrollToTop from '../component/ScrollToTop';
 // import ProductsList from '../pages/productslist/productsList';
 // import Product from '../pages/product';
 
-const mainRouter = () => (
-  <Router>
-    <ScrollToTop>
-      <Routes>
-        <Route path="/" exact element={<Mainpage />} />
-        <Route path="/shopping/productslist" exact element={<ProductsList />} />
-        <Route path="/shopping/product" exact element={<Product />} />
-      </Routes>
-    </ScrollToTop>
-  </Router>
-);
+function MainRouter() {
+  return (
+    <Router>
+      <ScrollToTop>
+        <Routes>
+          <Route path="/" exact element={<Mainpage />} />
+          <Route path="/shopping/productslist" exact element={<ProductsList />} />
+          <Route path="/shopping/product" exact element={<Product />} />
+        </Routes>
+      </ScrollToTop>
+    </Router>
+  );
+}
 
-export default mainRouter;
+export default MainRouter;
