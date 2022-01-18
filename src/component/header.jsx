@@ -9,36 +9,23 @@ const { SubMenu } = Menu;
 const { Search } = Input;
 const onSearch = (value) => console.log(value);
 const { Header } = Layout;
+const headeritem = require('../headeritem.json');
+
 const menu = (
   <Menu className="menuitem">
     <Menu.ItemGroup title="محصولات دسته بندی کالا دیجیتال:" />
-    <SubMenu title="تلفن همراه" className="submenu">
-      <Menu.Item className="submenu-item">
-        <span> سامسونگ</span>
-        <span>(Samsung)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        شیاومی
-        <span>(Xiaomi)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        هوآوی
-        <span>(Huawei)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        اپل
-        <span>(Apple)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        ال جی
-        <span>(LG)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        نوکیا
-        <span>(Nokia)</span>
-      </Menu.Item>
-    </SubMenu>
-    <SubMenu className="submenu" title="لوازم جانبی تلفن همراه">
+    {headeritem.menuitem.map((item) => (
+      <SubMenu title={item.name} className="submenu">
+        {headeritem.submenuitem.map((items) => (
+          <Menu.Item className="submenu-item">
+            <span> {items.country}</span>
+            <span>{items.english}</span>
+          </Menu.Item>
+        ))}
+      </SubMenu>
+    ))}
+
+    {/* <SubMenu className="submenu" title="لوازم جانبی تلفن همراه">
       <Menu.Item className="submenu-item">
         سامسونگ
         <span>(Samsung)</span>
@@ -114,9 +101,9 @@ const menu = (
         نوکیا
         <span>(Nokia)</span>
       </Menu.Item>
-    </SubMenu>
+    </SubMenu> */}
 
-    <Menu.Divider />
+    {/* <Menu.Divider />
     <SubMenu className="submenu" title=" مشاهده همه">
       <Menu.Item className="submenu-item">
         سامسونگ
@@ -141,7 +128,7 @@ const menu = (
         نوکیا
         <span>(Nokia)</span>
       </Menu.Item>
-    </SubMenu>
+    </SubMenu> */}
   </Menu>
 );
 

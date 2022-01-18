@@ -1,0 +1,51 @@
+{
+    "menuitem": [
+        {
+            "name": "تلفن همراه"
+        },
+        {
+            "name": "لوازم جانبی تلفن همراه"
+        },
+        {
+            "name": "لپ تاپ"
+        },
+        {
+            "name": "لوازم جانبی لپ تاپ"
+        },
+        {
+            "name": "مشاهده همه"
+        }
+    ],
+    "submenuitem": [
+        {
+            "id": "1",
+            "country": "سامسونگ",
+            "english": "Samsung"
+        },
+        {
+            "id": "1",
+            "country": "شیاومی",
+            "english": "Xiaomi"
+        },
+        {
+            "id": "1",
+            "country": "هوآوی",
+            "english": "Huawei"
+        },
+        {
+            "id": "1",
+            "country": "اپل",
+            "english": "Apple"
+        },
+        {
+            "id": "1",
+            "country": " ال جی",
+            "english": "LG"
+        },
+        {
+            "id": "1",
+            "country": "نوکیا",
+            "english": "Nokia"
+        }
+    ]
+}

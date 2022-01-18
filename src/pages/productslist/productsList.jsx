@@ -1,7 +1,9 @@
 import 'antd/dist/antd.css';
 import React from 'react';
+import { useParams, Link } from 'react-router-dom';
+
 import { Menu, Row, Col, Switch, Divider, Typography, Button } from 'antd';
-import { Link } from 'react-router-dom';
+
 import Headers from '../../component/header';
 import Footer from '../../component/footer';
 import Cards from '../../component/card';
@@ -23,7 +25,10 @@ import './productslist.scss';
 
 const { SubMenu } = Menu;
 
-function ProductsList() {
+function ProductsList({ match }) {
+  const { id } = useParams();
+  const user = [{ id: 'product' }];
+
   return (
     <div className="products-list">
       <Headers />
@@ -32,6 +37,7 @@ function ProductsList() {
           <h2>
             نتایج جستجو برای عنوان :<b> ساعت هوشمند </b>
           </h2>
+          {/* <h1>{match.params.id}</h1> */}
         </Col>
       </Row>
       <Row className="side">
@@ -125,7 +131,8 @@ function ProductsList() {
           </Row>
           <Row className="result-product">
             <Col lg={6} xs={12}>
-              <Link to="/shopping/product">
+              {/* const x  {heys.submenuitem.find((p) => p.id === match.params.id)} */}
+              <Link to={`/shopping/${id}`} activeClassName="current">
                 <Cards img={img1} productname="محصول 11" price="10000" off="20000" />
               </Link>
             </Col>

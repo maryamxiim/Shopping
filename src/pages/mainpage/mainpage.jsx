@@ -2,6 +2,8 @@ import 'antd/dist/antd.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Row, Col } from 'antd';
+// import Product from '../../component/produtsrow';
+import Productusp from '../../component/productusp';
 import icon24 from '../../assets/icon24.png';
 import iconhaml from '../../assets/iconhaml.png';
 import iconpay from '../../assets/iconpay.png';
@@ -65,30 +67,22 @@ function Mainpage() {
       <Row className="product-usp">
         <Col xl={3} xs={12}>
           <div className="product-usp-item">
-            <img src={icon24} alt="" />
-            <h4>پشتیبانی 24 ساعته</h4>
-            <h5>همیشه هستیم!</h5>
+            <Productusp img={icon24} title="پشتیبانی 24 ساعته" caption="همیشه هستیم!" />
           </div>
         </Col>
         <Col xl={3} xs={12}>
           <div className="product-usp-item">
-            <img src={iconhaml} alt="" />
-            <h4>ارسال رایگان</h4>
-            <h5>تا دستان شما</h5>
+            <Productusp img={iconhaml} title="ارسااال رایگان" caption="تا دستان شما" />
           </div>
         </Col>
         <Col xl={3} xs={12}>
           <div className="product-usp-item">
-            <img src={iconpay} alt="" />
-            <h4>پرداخت آسان</h4>
-            <h5>نقدی و اعتباری</h5>
+            <Productusp img={iconpay} title="پرداخت آسان" caption="نقدی و اعتباری" />
           </div>
         </Col>
         <Col xl={3} xs={12}>
           <div className="product-usp-item">
-            <img src={iconoff} alt="" />
-            <h4>همواره تخفیف</h4>
-            <h5>چی ازاین بهتر؟</h5>
+            <Productusp img={iconoff} title="همواره تخفیف" caption="چی ازاین بهتر؟" />
           </div>
         </Col>
       </Row>
