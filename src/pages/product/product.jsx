@@ -1,6 +1,6 @@
 import 'antd/dist/antd.css';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import {
   Row,
   Breadcrumb,
@@ -53,6 +53,8 @@ const text = `
 `;
 
 function Product() {
+  const { id } = useParams();
+  console.log('id', id);
   return (
     <div className="product">
       <Headers />

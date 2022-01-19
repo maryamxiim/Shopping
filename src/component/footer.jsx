@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Row, Col } from 'antd';
 import imgfooter from '../assets/Group2-2.png';
 import pjson from '../../package.json';
 import './footer.scss';
+import Column from './column';
 
 function Footer() {
   return (
@@ -14,100 +14,36 @@ function Footer() {
           <h3>نام فروشگاه</h3>
         </Col>
         <Col lg={4} xs={12}>
-          <ul className="title">
-            <Link to="/">
-              <li>
-                <h3>سر تیتر فوتر</h3>
-              </li>
-            </Link>
-            <Link to="/">
-              <li>
-                <h5> لینک شماره 1</h5>
-              </li>
-            </Link>
-            <Link to="/">
-              <li>
-                <h5> لینک شماره 2</h5>
-              </li>
-            </Link>
-            <Link to="/">
-              <li>
-                <h5> لینک شماره 3</h5>
-              </li>
-            </Link>
-          </ul>
+          <Column
+            title="سر تیتر فوتر"
+            item1="لینک شماره 1"
+            item2="لینک شماره 2"
+            item3="لینک شماره 3"
+          />
         </Col>
         <Col lg={4} xs={12}>
-          <ul className="title">
-            <Link to="/">
-              <li>
-                <h3>سر تیتر فوتر</h3>
-              </li>
-            </Link>
-            <Link to="/">
-              <li>
-                <h5> لینک شماره 1</h5>
-              </li>
-            </Link>
-            <Link to="/">
-              <li>
-                <h5> لینک شماره 2</h5>
-              </li>
-            </Link>
-            <Link to="/">
-              <li>
-                <h5> لینک شماره 3</h5>
-              </li>
-            </Link>
-          </ul>
+          <Column
+            title="سر تیتر فوتر"
+            item1="لینک شماره 1"
+            item2="لینک شماره 2"
+            item3="لینک شماره 3"
+          />
         </Col>
         <Col lg={4} xs={12}>
-          <ul className="title">
-            <Link to="/">
-              <li>
-                <h3>سر تیتر فوتر</h3>
-              </li>
-            </Link>
-            <Link to="/">
-              <li>
-                <h5> لینک شماره 1</h5>
-              </li>
-            </Link>
-            <Link to="/">
-              <li>
-                <h5> لینک شماره 2</h5>
-              </li>
-            </Link>
-            <Link to="/">
-              <li>
-                <h5> لینک شماره 3</h5>
-              </li>
-            </Link>
-          </ul>
+          <Column
+            title="سر تیتر فوتر"
+            item1="لینک شماره 1"
+            item2="لینک شماره 2"
+            item3="لینک شماره 3"
+          />
         </Col>
         <Col lg={4} xs={12}>
-          <ul className="title">
-            <Link to="/">
-              <li>
-                <h3>سر تیتر فوتر</h3>
-              </li>
-            </Link>
-            <Link to="/">
-              <li>
-                <h5> لینک شماره 1</h5>
-              </li>
-            </Link>
-            <Link to="/">
-              <li>
-                <h5> لینک شماره 2</h5>
-              </li>
-            </Link>
-            <Link to="/">
-              <li>
-                <h5> لینک شماره 3</h5>
-              </li>
-            </Link>
-          </ul>
+          <Column
+            title="سر تیتر فوتر"
+            item1="لینک شماره 1"
+            item2="لینک شماره 2"
+            item3="لینک شماره 3"
+          />
         </Col>
       </Row>
       <Row className="version">

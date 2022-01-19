@@ -22,8 +22,6 @@ import './productslist.scss';
 const { SubMenu } = Menu;
 
 function ProductsList() {
-  const { id } = useParams();
-
   return (
     <div className="products-list">
       <Headers />
@@ -115,17 +113,17 @@ function ProductsList() {
           </Row>
           <Row className="result-product">
             <Col lg={6} xs={12}>
-              <Link to={`/shopping/${id}`} activeClassName="current">
+              <Link to="/shopping/samsung" activeClassName="current">
                 <Cards img={img1} productname="محصول 11" price="10000" off="20000" />
               </Link>
             </Col>
             <Col lg={6} xs={12}>
-              <Link to="/shopping/product">
+              <Link to="/shopping/hwai">
                 <Cards img={image2} productname="محصول 2" price="200000" off="20000" />
               </Link>
             </Col>
             <Col lg={6} xs={12}>
-              <Link to="/shopping/product">
+              <Link to="/shopping/3">
                 <Cards img={image3} productname="محصول 3" price="200000" off="20000" />
               </Link>
             </Col>

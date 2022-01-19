@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from 'antd';
 import './card.scss';
 
-function Cards({ img, productname, price, off }) {
+function Cards({ img, productname, price, off, id }) {
   const nf = new Intl.NumberFormat();
   price.toLocaleString('en');
   const prices = nf.format(price);
