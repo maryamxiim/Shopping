@@ -1,7 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Row, Col } from 'antd';
-import './productusp.scss';
 
 function Productusp({ img, title, caption }) {
   return (

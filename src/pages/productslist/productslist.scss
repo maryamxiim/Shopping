@@ -2,7 +2,6 @@
   .title-product {
     display: flex;
     justify-content: space-around;
-    /* margin: 30px 60px 30px 0px; */
     margin: 20px 0px;
   }
   .side {
@@ -10,15 +9,12 @@
     justify-content: center;
     .menus {
       width: 100%;
-      /* margin-right: 20px; */
-      /* margin: 10px; */
       border: 1px solid #dddada;
       padding: 10px;
       border-radius: 8px;
       height: 100%;
 
       .menu-item {
-        /* max-width: 100%; */
         margin-right: 20px;
         width: 90%;
       }
@@ -90,13 +86,6 @@
   .ant-menu-inline .ant-menu-submenu-title {
     padding-right: 0px;
   }
-
-  // .ant-menu-submenu-open.ant-menu-submenu-inline > .ant-menu-submenu-title > .ant-menu-submenu-arrow {
-  //   width: 30%;
-  // }
-  // .ant-menu-submenu-open.ant-menu-submenu-inline > .ant-menu-submenu-title > .ant-menu-submenu-arrow {
-  //   width: 30%;
-  // }
 
   .ant-menu-submenu-open.ant-menu-submenu-inline
     > .ant-menu-submenu-title

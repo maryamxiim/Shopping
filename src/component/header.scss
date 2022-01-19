@@ -1,6 +1,5 @@
 .headers {
   .header {
-    /* width: 100%; */
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
@@ -71,7 +70,6 @@
   top: 10px;
   text-align: right;
   float: right;
-  // style={{ float: 'right', textAlign: 'right' }}
 }
 
 .ant-dropdown-menu-submenu-title .ant-dropdown-menu-submenu-expand-icon {

@@ -1,13 +1,10 @@
 import 'antd/dist/antd.css';
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-
-import { Menu, Row, Col, Switch, Divider, Typography, Button } from 'antd';
-
+import { Menu, Row, Col, Switch, Divider, Button } from 'antd';
 import Headers from '../../component/header';
 import Footer from '../../component/footer';
 import Cards from '../../component/card';
-// import Rectangle27 from '../../assets/Rectangle27.png';
 import img1 from '../../assets/image.png';
 import image2 from '../../assets/image2.jpg';
 import image3 from '../../assets/image3.jpg';
@@ -20,14 +17,12 @@ import image9 from '../../assets/image9.jpg';
 import image10 from '../../assets/image10.jpg';
 import image11 from '../../assets/image11.jpg';
 import image12 from '../../assets/image12.jpg';
-
 import './productslist.scss';
 
 const { SubMenu } = Menu;
 
-function ProductsList({ match }) {
+function ProductsList() {
   const { id } = useParams();
-  const user = [{ id: 'product' }];
 
   return (
     <div className="products-list">
@@ -37,7 +32,6 @@ function ProductsList({ match }) {
           <h2>
             نتایج جستجو برای عنوان :<b> ساعت هوشمند </b>
           </h2>
-          {/* <h1>{match.params.id}</h1> */}
         </Col>
       </Row>
       <Row className="side">
@@ -46,7 +40,6 @@ function ProductsList({ match }) {
             onClick={(e) => {
               console.log('click ', e);
             }}
-            // style={{ width: '90%' }}
             defaultSelectedKeys={['1']}
             defaultOpenKeys={['sub1']}
             mode="inline"
@@ -78,60 +71,50 @@ function ProductsList({ match }) {
           <div className="radio-item">
             <div>فقط نمایش محصولات موجود</div>
             <div>
-              {' '}
               <Switch size="small" defaultChecked />
             </div>
           </div>
           <div className="radio-item">
             <div>فقط نمایش محصولات تخفیف دار</div>
             <div>
-              {' '}
               <Switch size="small" defaultChecked />
             </div>
           </div>
           <div className="radio-item">
             <div>فقط کالاهای اصل</div>
             <div>
-              {' '}
               <Switch size="small" defaultChecked />
             </div>
           </div>
         </Col>
         <Col lg={17} xs={24} md={12}>
-          {/* <Productsrow />
-           */}
           <Row className="result-show">
             <Col lg={6} xs={24} md={24} className="show">
               ترتیب نمایش نتایج بر اساس:
             </Col>
             <Col lg={4} xs={12} md={12}>
               <Button type="text" ghost className="btn-show">
-                {' '}
                 پربازدیدترین
               </Button>
             </Col>
             <Col lg={4} xs={12} md={12}>
               <Button type="text" ghost className="btn-show">
-                {' '}
                 جدیدترین
               </Button>
             </Col>
             <Col lg={4} xs={12} md={12}>
               <Button type="text" ghost className="btn-show">
-                {' '}
                 قیمت: از کم به زیاد
               </Button>
             </Col>
             <Col lg={4} xs={12} md={12}>
               <Button type="text" ghost className="btn-show">
-                {' '}
                 قیمت: از زیاد به کم
               </Button>
             </Col>
           </Row>
           <Row className="result-product">
             <Col lg={6} xs={12}>
-              {/* const x  {heys.submenuitem.find((p) => p.id === match.params.id)} */}
               <Link to={`/shopping/${id}`} activeClassName="current">
                 <Cards img={img1} productname="محصول 11" price="10000" off="20000" />
               </Link>

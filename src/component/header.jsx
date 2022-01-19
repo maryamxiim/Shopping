@@ -24,111 +24,6 @@ const menu = (
         ))}
       </SubMenu>
     ))}
-
-    {/* <SubMenu className="submenu" title="لوازم جانبی تلفن همراه">
-      <Menu.Item className="submenu-item">
-        سامسونگ
-        <span>(Samsung)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        شیاومی
-        <span>(Xiaomi)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        هوآوی
-        <span>(Huawei)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        اپل
-        <span>(Apple)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        ال جی
-        <span>(LG)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        نوکیا
-        <span>(Nokia)</span>
-      </Menu.Item>
-    </SubMenu>
-    <SubMenu className="submenu" title="لپ تاپ">
-      <Menu.Item className="submenu-item">
-        سامسونگ
-        <span>(Samsung)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        شیاومی
-        <span>(Xiaomi)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        هوآوی
-        <span>(Huawei)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        اپل
-        <span>(Apple)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        ال جی
-        <span>(LG)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        نوکیا
-        <span>(Nokia)</span>
-      </Menu.Item>
-    </SubMenu>
-    <SubMenu className="submenu" title=" لوازم جانبی لپ تاپ">
-      <Menu.Item className="submenu-item">
-        سامسونگ
-        <span>(Samsung)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        شیاومی <span>(Xiaomi)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        هوآوی
-        <span>(Huawei)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        اپل
-        <span>(Apple)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        ال جی
-        <span>(LG)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        نوکیا
-        <span>(Nokia)</span>
-      </Menu.Item>
-    </SubMenu> */}
-
-    {/* <Menu.Divider />
-    <SubMenu className="submenu" title=" مشاهده همه">
-      <Menu.Item className="submenu-item">
-        سامسونگ
-        <span>(Samsung)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        شیاومی <span>(Xiaomi)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        هوآوی
-        <span>(Huawei)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        اپل
-        <span>(Apple)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        ال جی
-        <span>(LG)</span>
-      </Menu.Item>
-      <Menu.Item className="submenu-item">
-        نوکیا
-        <span>(Nokia)</span>
-      </Menu.Item>
-    </SubMenu> */}
   </Menu>
 );
 
@@ -141,24 +36,9 @@ function Headers() {
             <img src={logo} alt="" />
           </Link>
           <h3>نام فروشگاه</h3>
-          {/* <Row>
-            <Link to="/shopping" />
-
-            <Col>
-              
-            </Col>
-            <Col style={{ display: 'flex', alignItems: 'end' }}>
-              
-            </Col>
-          </Row> */}
         </Col>
         <Col lg={7} xs={14}>
-          <Search
-            placeholder="جستجو در میان محصولات"
-            onSearch={onSearch}
-            className="search"
-            // style={{ direction: 'ltr', textAlign: 'right' }}
-          />
+          <Search placeholder="جستجو در میان محصولات" onSearch={onSearch} className="search" />
         </Col>
         <Col lg={7} xs={24} className="top-left-header">
           <Link to="/">

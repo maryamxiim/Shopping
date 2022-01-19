@@ -1,6 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-
 import { Card } from 'antd';
 import './card.scss';
 
@@ -12,7 +10,6 @@ function Cards({ img, productname, price, off }) {
 
   return (
     <div className="Card">
-      {/* <Link to="/shopping/productslist"> */}
       <Card
         hoverable
         style={{ width: '100%' }}
@@ -23,7 +20,6 @@ function Cards({ img, productname, price, off }) {
         <br />
         <h4 className="off">{offs} تومان</h4>
       </Card>
-      {/* </Link> */}
     </div>
   );
 }

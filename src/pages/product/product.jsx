@@ -1,7 +1,6 @@
 import 'antd/dist/antd.css';
 import React from 'react';
-// import {withRouter} react-t
-import { withRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
   Row,
   Breadcrumb,
@@ -161,13 +160,7 @@ function Product() {
             </Col>
             <Col span={11} className="product-details-icon">
               <Link to="/">
-                <ShareAltOutlined
-                  className="icon-share"
-                  // style={{
-                  //   fontSize: '16px',
-                  //   color: 'black'
-                  // }}
-                />
+                <ShareAltOutlined className="icon-share" />
               </Link>
               <h5> به اشتراک گذاری</h5>
             </Col>
@@ -217,16 +210,7 @@ function Product() {
           </Row>
           <Divider />
           <Row className="detail-of-seller">
-            <Button
-              type="primary"
-              ghost
-              className="conv-seller"
-              // style={{
-              //   padding: '0px 70px',
-              //   margin: 'auto',
-              //   fontSize: '13px'
-              // }}
-            >
+            <Button type="primary" ghost className="conv-seller">
               <img src={message} alt="" />
               &nbsp; شروع گفتگو با فروشنده
             </Button>

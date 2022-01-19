@@ -2,7 +2,6 @@ import 'antd/dist/antd.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Row, Col } from 'antd';
-// import Product from '../../component/produtsrow';
 import Productusp from '../../component/productusp';
 import icon24 from '../../assets/icon24.png';
 import iconhaml from '../../assets/iconhaml.png';
@@ -27,40 +26,22 @@ import bac2 from '../../assets/exhead.png';
 import './mainpage.scss';
 
 function Mainpage() {
-  // const nf = new Intl.NumberFormat();
-  // nf.format(card1.off);
-  // console.log(card1);
   return (
     <div className="mainpage">
       <Headers />
       <Row className="slide">
         <Col lg={15} xs={24}>
           <Link to="/">
-            <img
-              className="slide-right"
-              src={slide22}
-              alt=""
-              // style={{ maxWidth: '100%', borderRadius: '16px', marginBottom: '25px' }}
-            />
+            <img className="slide-right" src={slide22} alt="" />
           </Link>
         </Col>
         <Col lg={7} xs={24}>
           <Link to="/">
-            <img
-              src={left1}
-              alt=""
-              className="slide-left-top"
-              // style={{ maxWidth: '100%', borderRadius: '16px' }}
-            />
+            <img src={left1} alt="" className="slide-left-top" />
           </Link>
 
           <Link to="/">
-            <img
-              src={left2}
-              alt=""
-              className="slide-left-bottom"
-              // style={{ maxWidth: '100%', marginTop: '25px', borderRadius: '16px' }}
-            />
+            <img src={left2} alt="" className="slide-left-bottom" />
           </Link>
         </Col>
       </Row>
@@ -86,41 +67,37 @@ function Mainpage() {
           </div>
         </Col>
       </Row>
-      {/* <Row></Row> */}
 
-      <Row>
-        <Productsrow
-          header={{
-            header: 'لوازم ورزشی',
-            title: 'پرفروش ترین کفش های ورزشی',
-            content: 'لورم ایپسوم متن ساختگی برای استفاده طراحان است',
-            background: bac2,
-            color: '#D6432F'
-          }}
-          cards={[
-            { img: shoe1, name: 'محصول 1', price: '20000', off: '20000' },
-            { img: shoe2, name: 'محصول 2', price: '20000', off: '20000' },
-            { img: shoe3, name: 'محصول 3', price: '20000', off: '20000' },
-            { img: shoe4, name: 'محصول 4', price: '20000', off: '20000' }
-          ]}
-        />
-      </Row>
-      <Row>
-        <Productsrow
-          header={{
-            title: 'بازدیدهای اخیر شما',
-            content: 'لورم ایپسوم متن ساختگی برای استفاده طراحان است',
-            background: bac1,
-            color: 'white'
-          }}
-          cards={[
-            { img: ex1, name: 'محصول 1', price: '50000', off: '20000' },
-            { img: ex2, name: 'محصول 2', price: '20000', off: '20000' },
-            { img: ex3, name: 'محصول 3', price: '20000', off: '20000' },
-            { img: ex4, name: 'محصول 4', price: '20000', off: '20000' }
-          ]}
-        />
-      </Row>
+      <Productsrow
+        header={{
+          header: 'لوازم ورزشی',
+          title: 'پرفروش ترین کفش های ورزشی',
+          content: 'لورم ایپسوم متن ساختگی برای استفاده طراحان است',
+          background: bac2,
+          color: '#D6432F'
+        }}
+        cards={[
+          { img: shoe1, name: 'محصول 1', price: '20000', off: '20000' },
+          { img: shoe2, name: 'محصول 2', price: '20000', off: '20000' },
+          { img: shoe3, name: 'محصول 3', price: '20000', off: '20000' },
+          { img: shoe4, name: 'محصول 4', price: '20000', off: '20000' }
+        ]}
+      />
+
+      <Productsrow
+        header={{
+          title: 'بازدیدهای اخیر شما',
+          content: 'لورم ایپسوم متن ساختگی برای استفاده طراحان است',
+          background: bac1,
+          color: 'white'
+        }}
+        cards={[
+          { img: ex1, name: 'محصول 1', price: '50000', off: '20000' },
+          { img: ex2, name: 'محصول 2', price: '20000', off: '20000' },
+          { img: ex3, name: 'محصول 3', price: '20000', off: '20000' },
+          { img: ex4, name: 'محصول 4', price: '20000', off: '20000' }
+        ]}
+      />
 
       <Footer />
     </div>

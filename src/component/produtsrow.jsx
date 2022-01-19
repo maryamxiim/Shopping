@@ -1,31 +1,17 @@
 import React from 'react';
-import { Row, Col, Card } from 'antd';
+import { Row, Col } from 'antd';
 import { Link } from 'react-router-dom';
 import CardHeading from './cardheading';
 import Cards from './card';
 import './produtsrow.scss';
 
-// const img = [];
-
-function Productsrow({ header, cards, card1, card2, card3, card4, img }) {
-  // console.log('cardsss', cards);
+function Productsrow({ header, cards }) {
   return (
     <div className="products-row">
       <Row className="products-row-content">
         <Col lg={6} xs={24}>
-          {/* <Link to="/shopping/products-list"> */}
-          <CardHeading
-            data={header}
-            // header={header.header}
-            // title={header.title}
-            // content={header.content}
-            // back1={header.background}
-            // color={header.color}
-          />
-          {/* </Link> */}
+          <CardHeading data={header} />
         </Col>
-        {/* card1.map */}
-
         <Col lg={16} xs={24} className="cardss">
           {cards?.map((card) => (
             <Col xs={12} sm={6} className="cardss">
@@ -41,26 +27,6 @@ function Productsrow({ header, cards, card1, card2, card3, card4, img }) {
             </Col>
           ))}
         </Col>
-
-        {/* <Link to="/shopping/productslist">
-            <Cards img={card1.img} productname={card1.name} price={card1.price} off={card1.off} />
-          </Link>
-        </Col>
-        <Col lg={4} xs={12} style={{ padding: '10px' }}>
-          <Link to="/shopping/productslist">
-            <Cards img={card2.img} productname={card2.name} price={card2.price} off={card2.off} />
-          </Link>
-        </Col>
-        <Col lg={4} xs={12} style={{ padding: '10px' }}>
-          <Link to="/shopping/productslist">
-            <Cards img={card3.img} productname={card3.name} price={card3.price} off={card3.off} />
-          </Link>
-        </Col>
-        <Col lg={4} xs={12} style={{ padding: '10px' }}>
-          <Link to="/shopping/productslist">
-            <Cards img={card4.img} productname={card4.name} price={card4.price} off={card4.off} />
-          </Link>
-        </Col> */}
       </Row>
     </div>
   );
