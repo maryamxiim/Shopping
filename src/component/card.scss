@@ -1,24 +1,23 @@
 .Card {
-    margin: 0px 5px;
+  margin: 0px 5px;
 
-    .card-img {
-        padding: 10px;
-        // border: 3px solid red;
-    }
+  .card-img {
+    padding: 10px;
+    // border: 3px solid red;
+  }
 
-    .prices {
-        // text-align:center;
-        // display: flex;
-        // justify-content: end;
-        float: left;
-         color: red;
-        //  float: left;
-        //  float: 'left';
-        // border: 3px solid red;
+  .prices {
+    // text-align:center;
+    // display: flex;
+    // justify-content: end;
+    float: left;
+    color: red;
+    //  float: left;
+    //  float: 'left';
+    // border: 3px solid red;
+  }
 
-    }
-
-    .off {
-        text-align: left;
-    }
+  .off {
+    text-align: left;
+  }
 }

@@ -1,4 +1,4 @@
-.mainpage{
+.mainpage {
   .slide {
     display: flex;
     justify-content: space-around;
@@ -8,24 +8,24 @@
       max-width: 100%;
       border-radius: 16px;
       margin-bottom: 25px;
-     }
+    }
 
-     .slide-left-top {
-       max-width: 100%;
-       border-radius: 16px;
-     }
-     .slide-left-bottom{
-max-width: 100%;
-border-radius: 16px;
-margin-top: 25px;
-     }
+    .slide-left-top {
+      max-width: 100%;
+      border-radius: 16px;
+    }
+    .slide-left-bottom {
+      max-width: 100%;
+      border-radius: 16px;
+      margin-top: 25px;
+    }
   }
 
   .product-usp {
     display: flex;
     justify-content: center;
     margin: 40px auto;
-  
+
     .product-usp-item {
       text-align: center;
       h4 {
@@ -33,6 +33,4 @@ margin-top: 25px;
       }
     }
   }
-  
 }
-
