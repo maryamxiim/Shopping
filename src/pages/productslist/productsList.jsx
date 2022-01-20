@@ -1,6 +1,6 @@
 import 'antd/dist/antd.css';
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Menu, Row, Col, Switch, Divider, Button } from 'antd';
 import Headers from '../../component/header';
 import Footer from '../../component/footer';
@@ -22,6 +22,93 @@ import './productslist.scss';
 const { SubMenu } = Menu;
 
 function ProductsList() {
+  const cardsproduct = [
+    {
+      img: img1,
+      productname: 'محصول 1',
+      price: '5000',
+      off: '400',
+      id: 'samsung'
+    },
+    {
+      img: image2,
+      productname: 'محصول 2',
+      price: '5000',
+      off: '400',
+      id: 'samsung'
+    },
+    {
+      img: image3,
+      productname: 'محصول 3',
+      price: '5000',
+      off: '400',
+      id: 'huawei'
+    },
+    {
+      img: image4,
+      productname: 'محصول 4',
+      price: '5000',
+      off: '400',
+      id: 'lg'
+    },
+    {
+      img: image5,
+      productname: 'محصول 5',
+      price: '5000',
+      off: '400'
+    },
+    {
+      img: image6,
+      productname: 'محصول 6',
+      price: '5000',
+      off: '400',
+      id: 'samsung'
+    },
+    {
+      img: image7,
+      productname: 'محصول 7',
+      price: '5000',
+      off: '400',
+      id: 'samsung'
+    },
+    {
+      img: image8,
+      productname: 'محصول 8',
+      price: '5000',
+      off: '400',
+      id: 'xiaomi'
+    },
+    {
+      img: image9,
+      productname: 'محصول 9',
+      price: '5000',
+      off: '400',
+      id: 'samsung'
+    },
+    {
+      img: image10,
+      productname: 'محصول 10',
+      price: '5000',
+      off: '400',
+      id: 'samsung'
+    },
+    {
+      img: image11,
+      productname: 'محصول 11',
+      price: '5000',
+      off: '400',
+      id: 'samsung'
+    },
+    {
+      img: image12,
+      productname: 'محصول 12',
+      price: '5000',
+      off: '400',
+      id: 'samsung'
+    }
+  ];
+  // <Cards img={img1} productname="" price="10000" off="20000" />
+
   return (
     <div className="products-list">
       <Headers />
@@ -112,7 +199,19 @@ function ProductsList() {
             </Col>
           </Row>
           <Row className="result-product">
-            <Col lg={6} xs={12}>
+            {cardsproduct.map((item) => (
+              <Col lg={6} xs={12} className="prudcts-item">
+                <Link to={'/shopping/'.concat(item.id)} activeClassName="current">
+                  <Cards
+                    img={item.img}
+                    productname={item.productname}
+                    price={item.price}
+                    off={item.off}
+                  />
+                </Link>
+              </Col>
+            ))}
+            {/* <Col lg={6} xs={12}>
               <Link to="/shopping/samsung" activeClassName="current">
                 <Cards img={img1} productname="محصول 11" price="10000" off="20000" />
               </Link>
@@ -131,9 +230,9 @@ function ProductsList() {
               <Link to="/shopping/product">
                 <Cards img={image4} productname="محصول 4" price="200000" off="20000" />
               </Link>
-            </Col>
+            </Col> */}
           </Row>
-          <Row className="result-product">
+          {/* <Row className="result-product">
             <Col lg={6} xs={12}>
               <Link to="/shopping/product">
                 <Cards img={image5} productname="محصول 5" price="200000" off="20000" />
@@ -174,9 +273,9 @@ function ProductsList() {
             <Col lg={6} xs={12}>
               <Link to="/shopping/product">
                 <Cards img={image12} productname="محصول 12" price="200000" off="20000" />
-              </Link>
-            </Col>
-          </Row>
+              </Link> */}
+          {/* </Col>
+          </Row> */}
         </Col>
       </Row>
 
