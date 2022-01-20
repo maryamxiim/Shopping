@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Productusp({ img, title, caption }) {
+function ProductUsp({ img, title, caption }) {
   return (
     <div>
       <img src={img} alt="" />
@@ -10,4 +10,4 @@ function Productusp({ img, title, caption }) {
   );
 }
 
-export default Productusp;
+export default ProductUsp;

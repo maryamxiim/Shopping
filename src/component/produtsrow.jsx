@@ -5,7 +5,7 @@ import CardHeading from './cardheading';
 import Cards from './card';
 import './produtsrow.scss';
 
-function Productsrow({ header, cards }) {
+function ProductsRow({ header, cards }) {
   return (
     <div className="products-row">
       <Row className="products-row-content">
@@ -32,4 +32,4 @@ function Productsrow({ header, cards }) {
   );
 }
 
-export default Productsrow;
+export default ProductsRow;

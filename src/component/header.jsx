@@ -18,8 +18,8 @@ const menu = (
       <SubMenu title={item.name} className="submenu">
         {headeritem.submenuitem.map((items) => (
           <Menu.Item className="submenu-item">
-            <span> {items.country}</span>
-            <span>{items.english}</span>
+            <span> {items.name}</span>
+            <span>{items.englishname}</span>
           </Menu.Item>
         ))}
       </SubMenu>

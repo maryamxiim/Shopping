@@ -18,34 +18,28 @@
     ],
     "submenuitem": [
         {
-            "id": "1",
-            "country": "سامسونگ",
-            "english": "Samsung"
+            "name": "سامسونگ",
+            "englishname": "Samsung"
         },
         {
-            "id": "1",
-            "country": "شیاومی",
-            "english": "Xiaomi"
+            "name": "شیاومی",
+            "englishname": "Xiaomi"
         },
         {
-            "id": "1",
-            "country": "هوآوی",
-            "english": "Huawei"
+            "name": "هوآوی",
+            "englishname": "Huawei"
         },
         {
-            "id": "1",
-            "country": "اپل",
-            "english": "Apple"
+            "name": "اپل",
+            "englishname": "Apple"
         },
         {
-            "id": "1",
-            "country": " ال جی",
-            "english": "LG"
+            "name": " ال جی",
+            "englishname": "LG"
         },
         {
-            "id": "1",
-            "country": "نوکیا",
-            "english": "Nokia"
+            "name": "نوکیا",
+            "englishname": "Nokia"
         }
     ]
 }

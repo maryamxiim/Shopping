@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './footer.scss';
 
-function Footer({ title, item1, item2, item3 }) {
+function Column({ title, item1, item2, item3 }) {
   return (
     <ul className="title">
       <Link to="/">
@@ -29,4 +29,4 @@ function Footer({ title, item1, item2, item3 }) {
   );
 }
 
-export default Footer;
+export default Column;

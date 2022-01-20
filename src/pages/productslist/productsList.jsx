@@ -26,88 +26,87 @@ function ProductsList() {
     {
       img: img1,
       productname: 'محصول 1',
-      price: '5000',
-      off: '400',
+      price: '300000',
+      off: '245000',
       id: 'samsung'
     },
     {
       img: image2,
       productname: 'محصول 2',
-      price: '5000',
-      off: '400',
+      price: '300000',
+      off: '245000',
       id: 'samsung'
     },
     {
       img: image3,
       productname: 'محصول 3',
-      price: '5000',
-      off: '400',
+      price: '300000',
+      off: '245000',
       id: 'huawei'
     },
     {
       img: image4,
       productname: 'محصول 4',
-      price: '5000',
-      off: '400',
+      price: '300000',
+      off: '245000',
       id: 'lg'
     },
     {
       img: image5,
       productname: 'محصول 5',
-      price: '5000',
-      off: '400'
+      price: '300000',
+      off: '245000'
     },
     {
       img: image6,
       productname: 'محصول 6',
-      price: '5000',
-      off: '400',
+      price: '300000',
+      off: '245000',
       id: 'samsung'
     },
     {
       img: image7,
       productname: 'محصول 7',
-      price: '5000',
-      off: '400',
+      price: '300000',
+      off: '245000',
       id: 'samsung'
     },
     {
       img: image8,
       productname: 'محصول 8',
-      price: '5000',
-      off: '400',
+      price: '300000',
+      off: '245000',
       id: 'xiaomi'
     },
     {
       img: image9,
       productname: 'محصول 9',
-      price: '5000',
-      off: '400',
+      price: '300000',
+      off: '245000',
       id: 'samsung'
     },
     {
       img: image10,
       productname: 'محصول 10',
-      price: '5000',
-      off: '400',
+      price: '300000',
+      off: '245000',
       id: 'samsung'
     },
     {
       img: image11,
       productname: 'محصول 11',
-      price: '5000',
-      off: '400',
+      price: '300000',
+      off: '245000',
       id: 'samsung'
     },
     {
       img: image12,
       productname: 'محصول 12',
-      price: '5000',
-      off: '400',
+      price: '300000',
+      off: '245000',
       id: 'samsung'
     }
   ];
-  // <Cards img={img1} productname="" price="10000" off="20000" />
 
   return (
     <div className="products-list">
@@ -211,71 +210,7 @@ function ProductsList() {
                 </Link>
               </Col>
             ))}
-            {/* <Col lg={6} xs={12}>
-              <Link to="/shopping/samsung" activeClassName="current">
-                <Cards img={img1} productname="محصول 11" price="10000" off="20000" />
-              </Link>
-            </Col>
-            <Col lg={6} xs={12}>
-              <Link to="/shopping/hwai">
-                <Cards img={image2} productname="محصول 2" price="200000" off="20000" />
-              </Link>
-            </Col>
-            <Col lg={6} xs={12}>
-              <Link to="/shopping/3">
-                <Cards img={image3} productname="محصول 3" price="200000" off="20000" />
-              </Link>
-            </Col>
-            <Col lg={6} xs={12}>
-              <Link to="/shopping/product">
-                <Cards img={image4} productname="محصول 4" price="200000" off="20000" />
-              </Link>
-            </Col> */}
           </Row>
-          {/* <Row className="result-product">
-            <Col lg={6} xs={12}>
-              <Link to="/shopping/product">
-                <Cards img={image5} productname="محصول 5" price="200000" off="20000" />
-              </Link>
-            </Col>
-            <Col lg={6} xs={12}>
-              <Link to="/shopping/product">
-                <Cards img={image6} productname="محصول 6" price="200000" off="20000" />
-              </Link>
-            </Col>
-            <Col lg={6} xs={12}>
-              <Link to="/shopping/product">
-                <Cards img={image7} productname="محصول 7" price="200000" off="20000" />
-              </Link>
-            </Col>
-            <Col lg={6} xs={12}>
-              <Link to="/shopping/product">
-                <Cards img={image8} productname="محصول 8" price="200000" off="20000" />
-              </Link>
-            </Col>
-          </Row>
-          <Row className="result-product">
-            <Col lg={6} xs={12}>
-              <Link to="/shopping/product">
-                <Cards img={image9} productname="محصول 9" price="200000" off="20000" />
-              </Link>
-            </Col>
-            <Col lg={6} xs={12}>
-              <Link to="/shopping/product">
-                <Cards img={image10} productname="محصول 10" price="200000" off="20000" />
-              </Link>
-            </Col>
-            <Col lg={6} xs={12}>
-              <Link to="/shopping/product">
-                <Cards img={image11} productname="محصول 11" price="200000" off="20000" />
-              </Link>
-            </Col>
-            <Col lg={6} xs={12}>
-              <Link to="/shopping/product">
-                <Cards img={image12} productname="محصول 12" price="200000" off="20000" />
-              </Link> */}
-          {/* </Col>
-          </Row> */}
         </Col>
       </Row>
 

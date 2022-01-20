@@ -2,7 +2,7 @@ import 'antd/dist/antd.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Row, Col } from 'antd';
-import Productusp from '../../component/productusp';
+import ProductUsp from '../../component/productusp';
 import icon24 from '../../assets/icon24.png';
 import iconhaml from '../../assets/iconhaml.png';
 import iconpay from '../../assets/iconpay.png';
@@ -12,7 +12,7 @@ import left1 from '../../assets/left1.jpg';
 import left2 from '../../assets/left2.jpg';
 import Headers from '../../component/header';
 import Footer from '../../component/footer';
-import Productsrow from '../../component/produtsrow';
+import ProductsRow from '../../component/produtsrow';
 import shoe1 from '../../assets/shoe1.jpg';
 import shoe2 from '../../assets/shoe2.jpg';
 import shoe3 from '../../assets/shoe3.jpg';
@@ -48,27 +48,27 @@ function Mainpage() {
       <Row className="product-usp">
         <Col xl={3} xs={12}>
           <div className="product-usp-item">
-            <Productusp img={icon24} title="پشتیبانی 24 ساعته" caption="همیشه هستیم!" />
+            <ProductUsp img={icon24} title="پشتیبانی 24 ساعته" caption="همیشه هستیم!" />
           </div>
         </Col>
         <Col xl={3} xs={12}>
           <div className="product-usp-item">
-            <Productusp img={iconhaml} title="ارسااال رایگان" caption="تا دستان شما" />
+            <ProductUsp img={iconhaml} title="ارسااال رایگان" caption="تا دستان شما" />
           </div>
         </Col>
         <Col xl={3} xs={12}>
           <div className="product-usp-item">
-            <Productusp img={iconpay} title="پرداخت آسان" caption="نقدی و اعتباری" />
+            <ProductUsp img={iconpay} title="پرداخت آسان" caption="نقدی و اعتباری" />
           </div>
         </Col>
         <Col xl={3} xs={12}>
           <div className="product-usp-item">
-            <Productusp img={iconoff} title="همواره تخفیف" caption="چی ازاین بهتر؟" />
+            <ProductUsp img={iconoff} title="همواره تخفیف" caption="چی ازاین بهتر؟" />
           </div>
         </Col>
       </Row>
 
-      <Productsrow
+      <ProductsRow
         header={{
           header: 'لوازم ورزشی',
           title: 'پرفروش ترین کفش های ورزشی',
@@ -84,7 +84,7 @@ function Mainpage() {
         ]}
       />
 
-      <Productsrow
+      <ProductsRow
         header={{
           title: 'بازدیدهای اخیر شما',
           content: 'لورم ایپسوم متن ساختگی برای استفاده طراحان است',
