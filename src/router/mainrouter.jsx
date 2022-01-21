@@ -9,8 +9,8 @@ function MainRouter() {
       <ScrollToTop>
         <Routes>
           <Route path="/" exact element={<Mainpage />} />
-          <Route path="/shopping/productslist/" exact element={<ProductsList />} />
-          <Route path="/shopping/:id" exact element={<Product />} />
+          <Route path="/shopping/productslist" exact element={<ProductsList />} />
+          <Route path="/:category/:subcategory/:id" exact element={<Product />} />
         </Routes>
       </ScrollToTop>
     </Router>

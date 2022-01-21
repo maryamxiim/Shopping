@@ -19,6 +19,7 @@ import image11 from '../../assets/image11.jpg';
 import image12 from '../../assets/image12.jpg';
 import './productslist.scss';
 
+// .concat(item.id)
 const { SubMenu } = Menu;
 
 function ProductsList() {
@@ -28,6 +29,8 @@ function ProductsList() {
       productname: 'محصول 1',
       price: '300000',
       off: '245000',
+      category: 'digital',
+      subcategory: 'phone',
       id: 'samsung'
     },
     {
@@ -35,6 +38,8 @@ function ProductsList() {
       productname: 'محصول 2',
       price: '300000',
       off: '245000',
+      category: 'digital',
+      subcategory: 'phone',
       id: 'samsung'
     },
     {
@@ -42,6 +47,8 @@ function ProductsList() {
       productname: 'محصول 3',
       price: '300000',
       off: '245000',
+      category: 'digital',
+      subcategory: 'phone',
       id: 'huawei'
     },
     {
@@ -49,12 +56,16 @@ function ProductsList() {
       productname: 'محصول 4',
       price: '300000',
       off: '245000',
+      category: 'digital',
+      subcategory: 'phone',
       id: 'lg'
     },
     {
       img: image5,
       productname: 'محصول 5',
       price: '300000',
+      category: 'digital',
+      subcategory: 'phone',
       off: '245000'
     },
     {
@@ -62,6 +73,8 @@ function ProductsList() {
       productname: 'محصول 6',
       price: '300000',
       off: '245000',
+      category: 'digital',
+      subcategory: 'phone',
       id: 'samsung'
     },
     {
@@ -69,6 +82,8 @@ function ProductsList() {
       productname: 'محصول 7',
       price: '300000',
       off: '245000',
+      category: 'digital',
+      subcategory: 'phone',
       id: 'samsung'
     },
     {
@@ -76,6 +91,8 @@ function ProductsList() {
       productname: 'محصول 8',
       price: '300000',
       off: '245000',
+      category: 'digital',
+      subcategory: 'phone',
       id: 'xiaomi'
     },
     {
@@ -83,6 +100,8 @@ function ProductsList() {
       productname: 'محصول 9',
       price: '300000',
       off: '245000',
+      category: 'digital',
+      subcategory: 'phone',
       id: 'samsung'
     },
     {
@@ -90,6 +109,8 @@ function ProductsList() {
       productname: 'محصول 10',
       price: '300000',
       off: '245000',
+      category: 'digital',
+      subcategory: 'phone',
       id: 'samsung'
     },
     {
@@ -97,6 +118,8 @@ function ProductsList() {
       productname: 'محصول 11',
       price: '300000',
       off: '245000',
+      category: 'digital',
+      subcategory: 'phone',
       id: 'samsung'
     },
     {
@@ -104,6 +127,8 @@ function ProductsList() {
       productname: 'محصول 12',
       price: '300000',
       off: '245000',
+      category: 'digital',
+      subcategory: 'phone',
       id: 'samsung'
     }
   ];
@@ -200,7 +225,9 @@ function ProductsList() {
           <Row className="result-product">
             {cardsproduct.map((item) => (
               <Col lg={6} xs={12} className="prudcts-item">
-                <Link to={'/shopping/'.concat(item.id)} activeClassName="current">
+                <Link
+                  to={`/${item.category}/${item.subcategory}/${item.id}`}
+                  activeClassName="current">
                   <Cards
                     img={item.img}
                     productname={item.productname}

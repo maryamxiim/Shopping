@@ -10,12 +10,14 @@ function ProductsRow({ header, cards }) {
     <div className="products-row">
       <Row className="products-row-content">
         <Col lg={6} xs={24}>
-          <CardHeading data={header} />
+          <Link to="/shopping/productslist">
+            <CardHeading data={header} />
+          </Link>
         </Col>
         <Col lg={16} xs={24} className="cardss">
           {cards?.map((card) => (
             <Col xs={12} sm={6} className="cardss">
-              <Link to="/shopping/productslist">
+              <Link to={`/${card.category}/${card.subcategory}/${card.id}`}>
                 <Cards
                   key={card.name}
                   img={card.img}
