@@ -14,12 +14,12 @@ const headeritem = require('../headeritem.json');
 const menu = (
   <Menu className="menuitem">
     <Menu.ItemGroup title="محصولات دسته بندی کالا دیجیتال:" />
-    {headeritem.menuitem.map((item) => (
-      <SubMenu title={item.name} className="submenu">
-        {headeritem.submenuitem.map((items) => (
+    {headeritem.menuitems.map((category) => (
+      <SubMenu title={category.name} className="submenu">
+        {category.subcategoies.map((subcategory) => (
           <Menu.Item className="submenu-item">
-            <span> {items.name}</span>
-            <span>{items.englishname}</span>
+            <span> {subcategory.name}</span>
+            <span>{subcategory.englishname}</span>
           </Menu.Item>
         ))}
       </SubMenu>
