@@ -1,0 +1,42 @@
+.request {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  //   align-items: center;
+  flex-direction: column;
+  .title-request {
+    // display: flex;
+    // justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 10px;
+  }
+  .request-row {
+    // width: 100
+    // margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+
+    .request-btn {
+      width: 100%;
+    }
+
+    .request-name {
+      //   border: 1px solid black;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      margin-left: 15px;
+    }
+
+    .request-input {
+      font-size: 14px;
+      //   border: 1px solid purple;
+      //   width: 400px;
+    }
+  }
+
+  .request-row-btn {
+  }
+}

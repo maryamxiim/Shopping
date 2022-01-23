@@ -41,7 +41,7 @@ function Headers() {
           <Search placeholder="جستجو در میان محصولات" onSearch={onSearch} className="search" />
         </Col>
         <Col lg={7} xs={24} className="top-left-header">
-          <Link to="/">
+          <Link to="/request">
             <Button className="left-header" type="text" icon={<ShopOutlined />}>
               &nbsp; ثبت نام فروشندگان
             </Button>
@@ -53,7 +53,7 @@ function Headers() {
             </Button>
           </Link>
           |
-          <Link to="/">
+          <Link to="/signup">
             <Button className="left-header" type="text" icon={<UserOutlined />}>
               &nbsp; حساب کاربری
             </Button>
